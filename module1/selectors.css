@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+
+/* Attribute selectors */
+[data-highlight] {
+    background-color: yellow;
+}
+
+/* Exact match attribute selector */
+[data-highlight="true"] {
+    background-color: red;
+}
+
+/* substring match selector */
+[class*="button"]{
+    background-color: lightgreen;
+    border: 1px solid black;
+}
+
+/* Prefix match selector */
+[href^="https://"]{
+    color: red;
+}
+
+/* Suffix match selector */
+[class$="item"]{
+    height: 100px;
+    width: 100px;
+    background-color: dodgerblue;
+    border: 1px solid black;
+    border-collapse: collapse;
+}

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
+        }
+
+        em {
+            color: #00B2B2;
+            text-decoration-line: underline;
+        }
+
+        [class^="item"] {
+            border: 1px solid black;
+            height: 30px;
+            background-color: rgba(255, 0, 0, 1);
+            align-content: center;
+            justify-items: center;
+        }
+
+        .item2 {
+            background-color: rgba(255, 0, 0, .75);
+        }
+
+        .item3 {
+            background-color: rgba(255, 0, 0, 0.50);
+        }
+
+        .item4 {
+            background-color: rgba(255, 0, 0, 0.25);
+        }
+
+        .item5 {
+            background-color: rgba(255, 0, 0, 0);
+        }
+
+        .item6 {
+            background-color: #f00;
+        }
+
+        .item7 {
+            background-color: #0f0;
+        }
+
+        .item8 {
+            background-color: #00f;
+        }
+
+        .item9 {
+            background-color: hsl(0, 100%, 50%);
+        }
+
+        .item10 {
+            background-color: hsl(120, 100%, 50%);
+        }
+
+        .item11 {
+            background-color: hsl(240, 100%, 50%);
+        }
+
+        .item12 {
+            background-color: hsla(0, 100%, 50%, 0.5);
+        }
+
+        .item13 {
+            background-color: hsla(60, 30%, 80%, 1);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Colors and colors models</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Colors and color models in CSS</h2>
+            <p>there are several models that govern color manipulation, each offering a distinct approach to defining
+                and utilizing colors. These are:</p>
+            <ol>
+                <li><b>RGB</b> (Red Green Blue)</li>
+                <li><b>HEX</b> (Hexadecimal)</li>
+                <li><b>HSL</b> (Hue-Saturation-Ligthness)</li>
+                <li><b>CMYK</b> (Cyan-Magenta-Yellow-Key) </li>
+                <li><b>HSV</b> (Hue-Saturation-Value) </li>
+            </ol>
+        </section>
+        <section>
+            <h2>The RGB Model</h2>
+            <p>As you might recall from the HTML Essentials course, colors are formed by combining differents levels of
+                three primary colors: Red, Green and Blue</p>
+            <p>Additionally, you can use <strong>the RGBA syntax</strong> a variant of RGB - Which allows you to
+                <strong>include an alpha channel for controlling transparency</strong>, which is essential for
+                <em>overlays</em> and <em>gradients</em> and other design effects. The Alpha component (a) indicates the
+                level of transparency of the color, raging from 0 (fully transparent) to 1 (fully opaque)
+            </p>
+            <div class="item1">
+                <p>rgba(255, 0, 0, 1)</p>
+            </div>
+            <div class="item2">
+                <p>rgba(255, 0, 0, 0.75)</p>
+            </div>
+            <div class="item3">
+                <p>rgba(255, 0, 0, 0.50)</p>
+            </div>
+            <div class="item4">
+                <p>rgba(255, 0, 0, 0.25)</p>
+            </div>
+            <div class="item5">
+                <p>rgba(255, 0, 0, 0)</p>
+            </div>
+        </section>
+        <section>
+            <h2>The HEX models</h2>
+            <p>In the HEX model, colors are defined using a <strong>six-character-code</strong>, starting with a hash
+                symbols</p>
+            <div class="item6">
+                <p>Red #FF0000</p>
+            </div>
+            <div class="item7">
+                <p>Green #00FF00</p>
+            </div>
+            <div class="item8">
+                <p>Blue #0000FF</p>
+            </div>
+        </section>
+        <section>
+            <h2>The HSL model</h2>
+            <p>The HSL model <strong>defines colors based on three main components: hue, saturation, and
+                    lightness</strong></p>
+            <ol>
+                <li><b>Hue</b> represents the actual color itsefls, raging from 0 to 360 degrees on the color wheel.Red
+                    is typically at 0 degrees, green at 120 degrees and blue at 240 degrees</li>
+                <li><b>Saturation</b> determines the intensity or purity of a color. A Saturation 0% results in a
+                    grayscale color (complete desaturated), while a saturation of 100% represents the most vibrant and
+                    intense version of the chosen hue.</li>
+                <li><b>Lightness</b> controls the brightness of the color. A lightness of 0% is completely black, while
+                    lightness of 100% is fully white </li>
+            </ol>
+            <div class="item9">
+                <p>hsl(0,100%,50%)</p>
+            </div>
+            <div class="item10">
+                <p>hsl(120,100%,50%)</p>
+            </div>
+            <div class="item11">
+                <p>hsl(240,100%,50%)</p>
+            </div>
+            <p>Addionatlly, you can use the <b>HSLA sintax to include an alpha value(opacity)</b>, allowing you to
+                control the transparency of the color. For example</p>
+            <div class="item12">
+                <p>hsla(0,100%,50%,0.5)</p>
+            </div>
+            <div class="item13">
+                <p>hsla(60,30%,80%, 1)</p>
+            </div>
+        </section>
+        <section>
+            <h2>The CMYK Model</h2>
+            <p>The CMYK is a <b>subtractive color model used primarly for color printing and reproduction</b>. It stand
+                for <b>Cyan</b>, <b>Magenta</b>, <b>Yellow</b>, and <b>Key</b>, representing the four ink plates used in
+                the printing process</p>
+            <p>Unlike the additive RGB model, which involves mixing light to create colors, the CMYK model focuses on
+                <b>substracting light</b> to achive the desired hues
+            </p>
+            <p>While the CMYK model is primarly associated with printing, it's important to note that <b>converting RGB
+                    colors to CMYK can lead to slight color shifts</b> due to differences in color gamuts and ink
+                limitations.</p>
+        </section>
+        <section>
+            <h2>The HSV Model</h2>
+            <p>The HSV color model is another way to define colors based on three main components: <b>hue, saturation,
+                    and value</b>.</p>
+            <p>The HSV model is particularly handy for creating color variations while maintaining the same brightness
+                level. It's often used to generate shades and tints of a base color</p>
+        </section>
+    </main>
+</body>
+
+</html>
