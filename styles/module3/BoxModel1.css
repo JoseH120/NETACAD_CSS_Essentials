@@ -1,0 +1,51 @@
+mark {
+    color: whitesmoke;
+    background: #555;
+    padding: 2px 2px;
+    border-radius: 5px;
+}
+
+.box1 {
+    border: 1px solid;
+    min-width: 100px;
+    max-width: 300px;
+    min-height: 50px;
+    max-height: 150px;
+    overflow: scroll;
+}
+
+.element {
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+}
+
+.element2 {
+    border: medium solid red;
+}
+
+ul li {
+    line-height: 1.5;
+}
+
+.element3 {
+    margin-top: 10px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    margin-left: 25px;
+}
+
+.footer {
+    height: 100px;
+}
+
+.box2 {
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+
+    border: 5px solid #333;
+    margin: 30px;
+    background-color: #f4f4f4;
+}

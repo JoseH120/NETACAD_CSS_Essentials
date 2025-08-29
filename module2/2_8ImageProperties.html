@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image properties</title>
+    <link rel="stylesheet" href="../styles/module2/misestilos.css">
+    <link rel="stylesheet" href="../styles/module2/imageProperties.css">
+    <script src="../scripts/functions.js"></script>
+</head>
+
+<body>
+    <h1>Image Properties</h1>
+    <h2>Essential image properties</h2>
+    <button id="btn0" onclick="mostrarContenido('cont0', 'btn0')">mostrar/ocultar</button>
+    <section id="cont0" hidden>
+        <article>
+            <h3>The width and height properties</h3>
+            <p>
+                <mark>width</mark> and <mark>height</mark> specify the width and height of an image element.
+            </p>
+            <p>For example:</p>
+            <button id="btn1" onclick="mostrarContenido('cont1', 'btn1')">mostrar/ocultar</button>
+            <div id="cont1" hidden>
+                <img class="img1" src="https://edube.org/uploads/media/default/0001/03/sunflowers_sunset_full.jpg"
+                    alt="">
+            </div>
+        </article>
+        <hr>
+        <article>
+            <h3>The max-width and max-height properties</h3>
+            <p><mark>max-width</mark> and <mark>max-height</mark> specify the maximum width and height an image can
+                have.</p>
+            <p>For example</p>
+            <button id="btn2" onclick="mostrarContenido('cont2', 'btn2')">mostrar/ocultar</button>
+            <div id="cont2" hidden>
+                <img class="img2" src="https://edube.org/uploads/media/default/0001/03/sunflowers_sunset_full.jpg"
+                    alt="">
+            </div>
+        </article>
+        <hr>
+        <article>
+            <h3>The object-fit property</h3>
+            <p><mark>object-fit</mark> controls how an image should be resized to fit its container while maintaining
+                its aspect ratio</p>
+            <p>For example</p>
+            <button id="btn3" onclick="mostrarContenido('cont3', 'btn3')">mostrar/ocultar</button>
+            <div id="cont3" hidden>
+                <img class="img3" src="https://edube.org/uploads/media/default/0001/03/sunflowers_sunset_full.jpg"
+                    alt="">
+            </div>
+        </article>
+        <hr>
+        <article>
+            <h3>The object-position property</h3>
+            <p><mark>object-position</mark> specifies the alignment of the image within it container.</p>
+            <p>For example</p>
+            <button id="btn4" onclick="mostrarContenido('cont4', 'btn4')">mostrar/ocultar</button>
+            <div id="cont4" hidden>
+                <img class="img4" src="https://edube.org/uploads/media/default/0001/03/sunflowers_sunset_full.jpg"
+                    alt="">
+            </div>
+        </article>
+        <hr>
+        <article>
+            <h3>The border property</h3>
+            <p><mark>border</mark> adds a border around an image element.</p>
+            <p>For example</p>
+            <button id="btn5" onclick="mostrarContenido('cont5', 'btn5')">mostrar/ocultar</button>
+            <div id="cont5" hidden>
+                <img class="img5" src="https://edube.org/uploads/media/default/0001/03/sunflowers_sunset_full.jpg"
+                    alt="">
+            </div>
+        </article>
+        <hr>
+        <article>
+            <h3>The border-radius property</h3>
+            <p>
+                <mark>border-radius</mark> <strong>rounds the corners of an image</strong>, creating a circular or
+                rounded
+                effect
+            </p>
+            <button id="btn6" onclick="mostrarContenido('cont6', 'btn6')">mostrar/ocultar</button>
+            <div id="cont6" hidden>
+                <img class="img6" src="https://edube.org/uploads/media/default/0001/03/sunflowers_sunset_full.jpg"
+                    alt="">
+            </div>
+        </article>
+        <hr>
+        <article>
+            <h3>The box-shadow property</h3>
+            <p><mark>box-shadow</mark> applies a shadow effect to an image. This property adds depth and can make images
+                pop
+                when usd effectively</p>
+            <button id="btn7" onclick="mostrarContenido('cont7', 'btn7')">mostrar/ocultar</button>
+            <div id="cont7" hidden>
+                <img class="img7 box" src="https://edube.org/uploads/media/default/0001/03/sunflowers_sunset_full.jpg"
+                    alt="">
+            </div>
+        </article>
+        <hr>
+        <article>
+            <h3>The filter property</h3>
+            <p>
+                <mark>filter</mark> allows for <strong>image manipulation</strong>, offering a range of effects like:
+            </p>
+            <ul>
+                <li><mark>blur()</mark> - applies a blur effect to the element. You specify the blur radius as the
+                    function's argument. For example, <mark>filter: blur(5px);</mark> will blur the element with a
+                    5-pixel
+                    radius</li>
+                <li><mark>brightness()</mark> - adjust the brightness of the element. A value of <mark>1</mark> means no
+                    change, values less than <mark>1</mark> make it darker, and values greate than <mark>1</mark> make
+                    it
+                    brighter.</li>
+                <li><mark>contrast()</mark> - alters the contrast of the element. Similar to <mark>brightness()</mark>,
+                    <mark>1</mark> means no chance, values less than <mark>1</mark> decrease contrast, and values
+                    greater
+                    than <mark>1</mark> increase contrast.
+                </li>
+                <li><mark>grayscale()</mark> - converts the element to grayscale. you can use
+                    <mark>grayscale(100%)</mark>
+                    to make the element completely grayscale.
+                </li>
+                <li><mark>invert()</mark> - inverts the colors of the element. A value of <mark>1</mark> (default) means
+                    no
+                    change, while <mark>0</mark> completely inverts the colors.</li>
+                <li><mark>sepia()</mark> - applies a sepia tone effect to the element. a value of <mark>100%</mark>
+                    makes
+                    the element completely sepia-toned</li>
+            </ul>
+            <button id="btn8" onclick="mostrarContenido('cont8', 'btn8')">mostrar/ocultar</button>
+            <div id="cont8" hidden>
+                <img class="img8 box" src="https://edube.org/uploads/media/default/0001/03/sunflowers_sunset_full.jpg"
+                    alt="">
+            </div>
+        </article>
+        <hr>
+        <article>
+            <h3>The z-index property</h3>
+            <p>The <mark>z-index</mark> property <strong>determines their stacking order.</strong></p>
+            <p>
+                It's crucial for controlling which elements appear on top. It assings a numerical value to an element,
+                indicating its position in the stacking order. Elements with higher <mark>z-index</mark> values will
+                appear
+                on top of elements with lower <mark>z-index</mark> values.
+            </p>
+            <button id="btn10" onclick="mostrarContenido('cont10', 'btn10')">mostrar/ocultar</button>
+            <div id="cont10" hidden>
+                <div class="boxes box1">Box1</div>
+                <div class="boxes box2">Box2</div>
+            </div>
+        </article>
+    </section>
+    <div class="footer"></div>
+</body>
+
+</html>

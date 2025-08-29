@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customizing Tables</title>
+    <script src="../scripts/functions.js"></script>
+    <link rel="stylesheet" href="../styles/module3/BasicTBStyles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Customizing tables with CSS</h1>
+    </header>
+    <main>
+        <h2>Border and basic table styling</h2>
+        <button id="btn1" onclick="mostrarContenido('basic-table', 'btn1')">mostrar/ocultar</button>
+        <table class="basic-table" id="basic-table" hidden>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+            <tr>
+                <td>john doe</td>
+                <td>28</td>
+                <td>new york</td>
+            </tr>
+            <tr>
+                <td>john doe</td>
+                <td>28</td>
+                <td>new york</td>
+            </tr>
+            <tr>
+                <td>item1</td>
+                <td>1</td>
+                <td>new york</td>
+            </tr>
+            <tr>
+                <td>item2</td>
+                <td>2</td>
+                <td>new york</td>
+            </tr>
+            <tr>
+                <td>item3</td>
+                <td>3</td>
+                <td>new york</td>
+            </tr>
+        </table>
+
+        <h2>Hover effects and row highlighting</h2>
+        <p>Enhancing user interaction, hover effects can significantly improve the readability of tables, especially in
+            data-dense layouts. We'll add a hover effects to highlights rows as the user's cursor moves over them.</p>
+        <p>See above example</p>
+        <p>The <mark>:hover</mark></p>
+        <p>The <mark>:nth-child(even)</mark> pseudo-class optionally used to give alternate rows different background
+            colors. Alternating row colors, or <strong>Zebra Striping</strong>, enhances a table's readability by
+            visually separating adjacent rows.</p>
+        <h2>Responsive table design</h2>
+        <button id="btn2" onclick="mostrarContenido('responsive-table', 'btn2')">mostrar/ocultar</button>
+        <div class="table-container">
+            <table class="responsive-table" id="responsive-table">
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>City</th>
+                </tr>
+                <tr>
+                    <td>item1</td>
+                    <td>1</td>
+                    <td>new york</td>
+                </tr>
+                <tr>
+                    <td>item2</td>
+                    <td>2</td>
+                    <td>new york</td>
+                </tr>
+                <tr>
+                    <td>item3</td>
+                    <td>3</td>
+                    <td>new york</td>
+                </tr>
+            </table>
+        </div>
+        <p>The <mark>.table-container</mark> div wraps the table and is set to <mark>overflow-x:auto</mark>, enabling
+            horizontal scrolling when the table's width exceeds the viewport width . It's crucial for maintaining the
+            table's readability on smaller devices by allowing users to scroll horizontally to view the entire table.
+        </p>
+        <p>The <mark>.responsive-table</mark> is given a minimum width to ensure that its content remains uncrushed,
+            providing a clear view of data even when the table needs to scroll horizontally. It ensures that the table
+            doesn't become too narrow on small screens, which might cramp the content and make it hard to read. Users
+            can scoll horizontally view content that overflows the viewport width.</p>
+    </main>
+</body>
+
+</html>

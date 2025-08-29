@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyperlink properties</title>
+    <link rel="stylesheet" href="../styles/module2/misestilos.css">
+    <link rel="stylesheet" href="../styles/module2/hyperlinkProperties.css">
+    <script src="../scripts/functions.js"></script>
+</head>
+
+<body>
+
+    <h1>Hyperlink Properties</h1>
+    <button id="btncontent" onclick="mostrarContenido('showcontent','btncontent')">mostrar/ocultar</button>
+    <div id="showcontent" hidden>
+        <section>
+            <h3>Understanding the five link states</h3>
+            <ul>
+                <li><strong>Normal</strong> it hasn't been interacted with</li>
+                <li><strong>Visited</strong> link enters the visited state.</li>
+                <li><strong>Focus</strong> is related to the appearance of a link when it has focus.</li>
+                <li><strong>Hover</strong> when a user hovers their mouse pointer over a link</li>
+                <li><strong>Active</strong> when a user clicks on a link</li>
+            </ul>
+        </section>
+        <hr>
+        <section>
+            <h3>Targetting Different Link States with Pseudo-Classes</h3>
+            <p>Here are some commonly used pseudo-classes for styling links:</p>
+            <ul class="spaced-item">
+                <li><mark>:link</mark></li>
+                <li><mark>:visited</mark></li>
+                <li><mark>:focus</mark></li>
+                <li><mark>:hover</mark></li>
+                <li><mark>:active</mark></li>
+            </ul>
+            <p>For example:</p>
+            <p>I am an <a href="#" target="_blank" rel="noopener noreferrer">empty link</a></p>
+        </section>
+    </div>
+
+    <section>
+        <h3>CSS Properties for Styling Links</h3>
+        <ul>
+            <li><mark>color</mark> changes the text color of the link</li>
+            <li><mark>text-decoration</mark> commonly used to add or remove underlines from links</li>
+            <li><mark>background-color</mark> set the background color of the link.</li>
+            <li><mark>font-weight</mark> changes the weight(boldness) of the link text.</li>
+            <li><mark>border</mark> adds or modifies the border of the link</li>
+        </ul>
+        <p>Welcome to our website. Please visit our <a href="#" class="link">About Us</a></p>
+    </section>
+    <div class="footer"></div>
+
+</body>
+
+</html>

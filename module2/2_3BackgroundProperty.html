@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../styles/module2/misestilos.css">
+    <link rel="stylesheet" href="../styles/module2/backgroundProperties.css">
+    <script src="../scripts/functions.js"></script>
+</head>
+
+<body>
+    <h1>Background properties and gradient functions</h1>
+    <h3>Background properties</h3>
+    <p>Building upon the foundation laid by the the <mark>background</mark> and <mark>background-color</mark> properties
+        introduced in the previous section, let's now delve into yet another specific and specialized background
+        property - <mark>background-image</mark></p>
+    <hr>
+    <section>
+        <article>
+            <h3>The background-image property</h3>
+            <p>The <mark>background-image</mark> property allows you to <b>set an image as the background of an
+                    element.</b> The image can be local or hosted online.</p>
+            <button id="btn1" onclick="mostrarContenido('cont1', 'btn1')">mostrar/ocultar</button>
+            <div id="cont1" class="header1" hidden>
+                <h1>Welcome to our website</h1>
+                <p>Discover amazing content.</p>
+            </div>
+        </article>
+    </section>
+    <section>
+        <h2>background-related properties</h2>
+        <p>There is a number of <mark>background-related</mark> properties that allow you to modify the presentation
+            of the <mark>background-image</mark> property. We'll discuss some of them</p>
+        <hr>
+        <article>
+            <h3>The background-repeat property</h3>
+            <p>The <mark>background-repeat</mark> property <b>determines how the background image should repeat</b> (if
+                it's smaller than the element)</p>
+            <p>Possible values include <makr>repeat</makr> (default - the background image is repeated both horizontally
+                and vertically), <mark>repeat-x</mark>(the background image is repeated only horizontally),
+                <mark>repeat-y</mark> (the background image is repeated only vertically), and <mark>no-repeat</mark>
+                (the background image is not repeated)
+            </p>
+        </article>
+        <hr>
+        <article>
+            <h3>The background-size property</h3>
+            <p>the <mark>background-size</mark> property <b>specifies the size of the background image</b></p>
+            <p>Possible values can be <mark>cover</mark> (the image is scaled to cover the entire container's background
+                area, potentially cropping some parts of the image to maintain the aspect ratio) , <mark>contain</mark>
+                (the image is scaled to fit entirely within the container's dimensions, preserving the aspect ratio.
+                There might be empty space around the image), or specific dimensions like <mark>200px 150px</mark> </p>
+        </article>
+        <hr>
+        <article>
+            <h3>The background-position property</h3>
+            <p>The <mark>background-position</mark> property <b>sets the starting position of the background image
+                    within its container</b>. </p>
+            <p>You can use keywords (<mark>top</mark>, <mark>bottom</mark>, <mark>left</mark>, <mark>right</mark>) or
+                precise length values (e.g <mark>50%</mark>, <mark>10px</mark>) to specify the horizontal and vertical
+                position.</p>
+        </article>
+        <button id="btn2" onclick="mostrarContenido('cont2', 'btn2')">mostrar/ocultar</button>
+        <div id="cont2" hidden>
+            <div class="header1 header2">
+                <h1>Welcome to our website</h1>
+                <p>Lorem ipsum dolor sit...</p>
+            </div>
+            <div class="content">
+                <h2>About us</h2>
+                <p>Lorem ipsum dolor sit amet...</p>
+            </div>
+        </div>
+        <article>
+            <h3>The background-blend mode property</h3>
+            <p><mark>background-blend-mode</mark> is an interesting property that <b>applies a blending mode to the
+                    background image with the background color</b>. It allows for creative visual effects.</p>
+        </article>
+        <button id="btn3" onclick="mostrarContenido('cont3', 'btn3')">mostrar/ocultar</button>
+        <div id="cont3" class="box-shadow" hidden>
+            <div class="header1 header3">
+                <h1>Welcome to our Website.</h1>
+                <p>Lorem ipsum dolor sit amet...</p>
+            </div>
+            <div class="content">
+                <h2>About us.</h2>
+                <p>Lorem ipsum dolor sit amet...</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <article>
+            <h3>The background-attachment property</h3>
+            <p>The <mark>background-attachment</mark> property <strong>controls whether a background image scrolls with
+                    the content or remains fixed</strong> as the user scrolls through the webpage.</p>
+            <p>The two possible values are <mark>scroll</mark> (the defualt) which scrolls the image with the content,
+                and <mark>fixed</mark> which keeps the image stationary as the user scrolls.</p>
+            <p>For example:</p>
+            <button id="btn4" onclick="mostrarContenido('cont4', 'btn4')">mostrar/ocultar</button>
+            <div class="box box-shadow" id="cont4" hidden>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quaerat aliquid sit esse nostrum, quasi
+                </p>
+                <p>aspernatur deleniti, rerum consectetur repudiandae, fuga voluptatum perspiciatis earum commodi iste
+                </p>
+                <p>quod iure assumenda ad.</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quaerat aliquid sit esse nostrum, quasi
+                </p>
+                <p>aspernatur deleniti, rerum consectetur repudiandae, fuga voluptatum perspiciatis earum commodi iste
+                </p>
+                <p>quod iure assumenda ad.</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quaerat aliquid sit esse nostrum, quasi
+                </p>
+                <p>aspernatur deleniti, rerum consectetur repudiandae, fuga voluptatum perspiciatis earum commodi iste
+                </p>
+                <p>quod iure assumenda ad.</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quaerat aliquid sit esse nostrum, quasi
+                </p>
+                <p>aspernatur deleniti, rerum consectetur repudiandae, fuga voluptatum perspiciatis earum commodi iste
+                </p>
+                <p>quod iure assumenda ad.</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quaerat aliquid sit esse nostrum, quasi
+                </p>
+                <p>aspernatur deleniti, rerum consectetur repudiandae, fuga voluptatum perspiciatis earum commodi iste
+                </p>
+                <p>quod iure assumenda ad.</p>
+            </div>
+        </article>
+    </section>
+    <section>
+        <article>
+            <h3>Gradient Functions</h3>
+            <p>In addition to background-related properties we'vejust discussed, there also two interesting functions
+                that
+                let you add gradients as backgrounds. These are <mark>linear-gradient()</mark> and
+                <mark>radial-gradient()</mark>, which you can use along with the <mark>background-image</mark> property.
+            </p>
+            <h4>The linear-gradient() function</h4>
+            <p>Here's how you can use the <mark>linear-gradiente()</mark> function to create a background gradient:</p>
+            <button id="btn5" onclick="mostrarContenido('cont5', 'btn5')">mostrar/ocultar</button>
+            <div id="cont5" hidden>
+                <div class="header4">
+                    <h1>Welcome to Our website</h1>
+                    <p>Discover amazing content.</p>
+                </div>
+                <div class="content">
+                    <h2>About us</h2>
+                    <p>We are a creative team...</p>
+                </div>
+            </div>
+        </article>
+        <article>
+            <h4>The radial-gradient() function</h4>
+            <p>And here's an example of the <mark>radial-gradient()</mark> function to create radial gradients:</p>
+            <button id="btn6" onclick="mostrarContenido('cont6', 'btn6')">mostrar/ocultar</button>
+            <div id="cont6" hidden>
+                <div class="header5">
+                    <h1>Welcometo our website</h1>
+                    <p>Discover amazing content.</p>
+                </div>
+                <div class="content">
+                    <h2>About us</h2>
+                    <p>We are a creative team...</p>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <footer class="footer"></footer>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+ul {
+    list-style-type: circle;
+}
+
+.list-square {
+    list-style-type: square;
+}
+
+.image-marker-list {
+    list-style-image: url('https://edube.org/uploads/media/default/0001/04/oedg_icon_regular.png');
+}
+
+.inside-position-list {
+    list-style-position: inside;
+}
+
+.custom-bullet-list {
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+.custom-number-list {
+    list-style-type: lower-alpha;
+    list-style-position: outside;
+}
+
+.spaced-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.spaced-list li {
+    margin: 10px 0px;
+    padding: 5px 10px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+}
+
+.spaced-list-2 {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.spaced-list-2 li {
+    margin: 10px 0px;
+    padding: 5px 10px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    line-height: 1.6;
+}

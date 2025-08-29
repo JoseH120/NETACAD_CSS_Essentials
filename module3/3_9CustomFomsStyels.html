@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Styling</title>
+    <link rel="stylesheet" href="../styles/module3/CustomFormStyling.css">
+</head>
+
+<body>
+    <h1>Customizing forms with CSS</h1>
+    <main>
+        <h2>Styling text inputs and labels</h2>
+        <form action="" class="custom-form">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+        </form>
+        <ul>
+            <li>The <mark>.custom-form</mark> class style the form container with a maximum width, centered alignment,
+                padding, and background-color.</li>
+            <li>The <mark>label</mark> elements are displayed as block elements, which means they appear on a new line,
+                and they are styled with color and margin for spacing.</li>
+            <li>Text inputs (<mark>&lt;input type='text'&gt;</mark> and <mark>&lt;input type='email'&gt;</mark>) are
+                styled to take full width of the form container. Padding, border, and border-radius are applied to
+                polished, user-friendly appearance.</li>
+        </ul>
+
+        <h2>Customizing Buttons</h2>
+        <p>Buttons are a crucial component of forms, prompting users to submit data or perform actions. A well-styled
+            button to make it stand out and invite clicks:</p>
+        <form action="" class="custom-form">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+            <label for="email">Email:</label>
+            <!-- Spacer div for visual separate -->
+            <input type="email" name="email" id="email">
+            <div class="button-spacer"></div>
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+        <p>Code explanation</p>
+        <ul>
+            <li>A <mark>div</mark> element the class <mark>.button-spacer</mark> is introduced between the last input
+                field and the Submit button. This div serves as a spacer, creating visual separation and enhacing the
+                form's layout.</li>
+            <li>The <mark>.button-spacer</mark> class is styled with a height property, determining the amount of space
+                between the last input field and the button. You can adjust the height value to increase or decrease the
+                spacing as needed.</li>
+            <li>The <mark>submit-button</mark> class styles the <mark>button</mark> element occupy the full width of the
+                form container, ensuring visual consistency with the input fields.</li>
+            <li>The button is styled with padding, background-color, text-color, and border-radius for a modern,
+                clickable appearance.</li>
+            <li>The <mark>cursor:pointer;</mark> style changes the cursor to a pointer when hovering over the button,
+                indicating it's clickable.</li>
+            <li>A hover effect is added (<mark>background-color: #45a049</mark>) to provide visual feedback when the
+                user hovers over the button, enhancing the interactie experience.</li>
+        </ul>
+        <h2>Organizing fields with fieldsets</h2>
+        <p>Grouping related fields enhances form structure and user understanding. The <mark>&lt;fieldset&gt;</mark> and
+            element semantically groups related inputs and <mark>&lt;legend&gt;</mark> element provides a caption for
+            the group.</p>
+        <p>Let's style a fieldset to group related fields cohesively:</p>
+        <form class="styled-form">
+            <fieldset>
+                <legend>Personal information</legend>
+                <input type="text" name="" id="" placeholder="First Name">
+                <input type="text" name="" id="" placeholder="Last Name">
+                <!-- related fieldset -->
+            </fieldset>
+
+            <!-- More fieldsets for other groups -->
+        </form>
+    </main>
+</body>
+
+</html>

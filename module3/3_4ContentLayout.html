@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controlling Layout</title>
+    <link rel="stylesheet" href="../styles/module3/ContentLayout.css">
+    <script src="../scripts/functions.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Controlling content layout</h1>
+        <p>Your toolkit with a set of additional properties that provide enhanced control over the size, spacing,
+            alingment, and visual presentation of HTML elements within your web page.</p>
+    </header>
+    <button id="btn1" onclick="mostrarContenido('cont1', 'btn1')">mostrar/ocultar</button>
+    <main id="cont1" hidden>
+        <section>
+            <h2>Controlling content overflow</h2>
+            <p>We discussed how the <mark>width</mark> and <mark>height</mark> properties allow you to specify the
+                dimensions of an element, defining its content area's width and height</p>
+            <p>We also explored the <mark>min-width / min-height</mark> and <mark>max-width / max-height</mark>
+                properties, which help in responsive design by setting the minimum and maximum size an element can be.
+            </p>
+            <p>However, these properties, while helpful for maintaining design consistency, may sometimes result in
+                <strong>content overflow situations</strong>. When you set a minimum and maximum dimensions for an
+                element, this restricts the available space for its content. In such scenarios an element's content can
+                exceed the available space, extending beyond its designated area and potentially affecting your
+                webpage's layout.
+            </p>
+        </section>
+        <section>
+            <h2>The overflow property</h2>
+            <p>To tackle this issue and maintain control over your content, CSS provides the <mark>overflow</mark>
+                property, which you may have have seen already when discussing background properties.</p>
+            <p>This property <strong>dictates how the web browser should handle content that overflows an element's
+                    boundaries</strong>. It offers several values including <mark>visible</mark>, <mark>hidden</mark>,
+                <mark>scroll</mark>, and <mark>auto</mark>
+            </p>
+            <p>Let's introduce its functionality with an example where you want to introduce scrollbars when content
+                overflows:</p>
+            <div class="container1">
+                <div class="content1">
+                    <p>Guitars are versatile musical instruments know for their melodic tones and rhythmic capabilities.
+                        With their strings and resonant bodies, guitars produce a wide range of sounds, from gentle and
+                        soothing to powerful and electrifying. These iconic instruments come in various types, including
+                        acoustic, classical, and electric guitars, each with its unique character and playing style.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Controlling content alingment</h2>
+            <p>To control the alingment of box content in CSS, you can use the <mark>text-align</mark> property for
+                <strong>inline-level-elements</strong> and the <mark>margin</mark> property <strong>for block-level
+                    elements</strong>
+            </p>
+            <article>
+                <h3>Horizontal Alingment</h3>
+                <p>Determines how content is positioned along the horizontal axis within an element.</p>
+                <p>You can control horizontal alingment using CSS properties like <mark>text-align</mark>,
+                    <mark>margin</mark>, and <mark>position</mark>
+                </p>
+                <p>Let's begin with a common scenario where we want to center-align tet within a block-level element,
+                    like a <mark>&lt;div&gt;</mark></p>
+
+                <div class="center-align">
+                    <p>Horizontally centered content.</p>
+                </div>
+            </article>
+            <article>
+                <h3>Vertical Alingment</h3>
+                <h4>Scenario #1</h4>
+                <div class="container-v1">
+                    <p>Vertical centered content.</p>
+                </div>
+                <h4>Scenario #2</h4>
+                <div class="container-v2">
+                    <p>This is some <span>vertically centered</span> content.</p>
+                </div>
+            </article>
+        </section>
+
+    </main>
+
+    <section>
+        <h2>Bringing it all together</h2>
+        <div class="page-container">
+            <div class="header">
+                <nav>
+                    <ul>
+                        <li><a href="#home">home</a></li>
+                        <li><a href="#item1">item1</a></li>
+                        <li><a href="#item2">item2</a></li>
+                        <li><a href="#item3">item3</a></li>
+                        <li><a href="#item4">item4</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="main-content">Main Content</div>
+            <div class="footer">Footer Content</div>
+        </div>
+    </section>
+</body>
+
+</html>

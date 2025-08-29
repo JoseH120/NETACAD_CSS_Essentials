@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    margin: auto;
+}
+
+mark {
+    background: #333;
+    border-radius: 15px;
+    padding: 0 5px;
+    color: white;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+h1 {
+    color: rgb(0, 128, 0)
+}
+
+.p {
+    color: #ff5733;
+}
+
+.vivid {
+    color: hsl(210, 100%, 50%)
+}
+
+a {
+    color: pink
+}
+
+.bg-article {
+    background-color: lightblue;
+}
+
+.box {
+    border-style: solid;
+    border-color: lightblue;
+}
+
+article>div {
+    background: lightblue;
+    color: yellow;
+}
+
+.border {
+    border: 3px solid orange;
+    color: red;
+}
+
+.button{
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+#item1{
+    outline-color:#007bFF;
+}

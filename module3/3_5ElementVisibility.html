@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element Visibility</title>
+    <link rel="stylesheet" href="../styles/module3/ElementVisibility.css">
+    <script src="../scripts/functions.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Controlling Element Visibility</h1>
+
+    </header>
+    <button id="btn1" onclick="mostrarContenido('cont1', 'btn1')">mostrar/ocultar</button>
+    <main id="cont1">
+        <article>
+            <p>We'll explore the essential properties of <mark>display</mark> and <mark>visibility</mark>, and how they
+                allow you to manage the visibility of elements within your web page layout.</p>
+            <p>The <mark>display</mark> property provides options for altering how elements are displayed, while the
+                <mark>visibility</mark> property offers control over an element's visibility without affecting its space
+                within the layout.
+            </p>
+            <p>
+                Understanding the nuances of these properties is crucial for creating dynamic and responsive web
+                desings.</p>
+        </article>
+        <article>
+            <h2>Display property</h2>
+            <p>The <mark>display</mark> property specifies if(or how) an element is displayed. Common values include
+                <mark>none</mark> (element is completely removed), <mark>block</mark>, <mark>inline</mark>, and
+                <mark>inline-block</mark>
+            </p>
+            <h4>display:none</h4>
+            <div>This div is always visible.</div>
+            <div class="hidden">This div will not be displayed.</div>
+            <div>This div is always visible.</div>
+            <h4>display:inline</h4>
+            <ul>
+                <li class="menu-item">Home</li>
+                <li class="menu-item">About</li>
+                <li class="menu-item">Services</li>
+                <li class="menu-item">Contact</li>
+            </ul>
+            <h4>display:block</h4>
+            <p>This is a paragraph with <span class="block-element">a span element</span> that is now a block element.
+            </p>
+            <h4>display:inline-block</h4>
+            <p>This is <span class="inline-block-element">First item</span> and that is <span
+                    class="inline-block-element">Second item</span>.</p>
+        </article>
+        <article>
+            <h3>The visibility property</h3>
+            <p>The <mark>visibility</mark> property <strong>specifies whether an element is visible or not.</strong>.
+                Unlike <mark>display:none</mark>, <mark>visibility:hidden</mark>
+                <strongs>keeps the element in the layout</strongs>.
+            </p>
+            <div>This div is always visible</div>
+            <div class="hidden-element">This div is hidden but still takes up space.</div>
+            <div>This div is also visible</div>
+        </article>
+        <article>
+            <div>
+                <p>as a result, this <mark>div</mark> becomes invisible on the web page, but unlike
+                    <mark>display:none</mark>, it still occupies its original space in the layout.
+                </p>
+                <p>This means the other elements on the page do not shift to fill the space that the hidden element
+                    would
+                    normally occupy, preservig the layout's overall structure.</p>
+            </div>
+            <h3>display:none vs. visibility:hidden</h3>
+            <p>When deciding between these two CSS properties:</p>
+            <ul>
+                <li>Use <mark>display:none</mark> if you want an element <strong>to disappear entirely from the page
+                        layout</strong>, making it visible and removing it from the document flow.</li>
+                <li>Use <mark>visibility:hidden</mark> when you want <strong>to hide an element while keeping its
+                        space</strong> allocated in document layout.</li>
+            </ul>
+        </article>
+    </main>
+
+</body>
+
+</html>

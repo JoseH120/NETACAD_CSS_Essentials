@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/module3/BackgroundBox.css">
+    <title>Adding background to box elements</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Adding Backgrounds: Colors, Images, and Shadows</h1>
+    </header>
+
+    <main>
+        <h2>Colors and images</h2>
+        <ul>
+            <li><mark>background-color</mark></li>
+            <li><mark>background-image</mark></li>
+            <li><mark>background-repeat</mark> and <mark>background-position</mark></li>
+        </ul>
+        <div class="rounded-box">
+            Rounded Box
+        </div>
+
+
+        <h2>Controlling background images</h2>
+        <p>let's explore hhow to exert more precise control over the display of background images and their interactions
+            with other box models properties, such as padding and borders, using featuers like
+            <mark>background-size</mark> and <mark>background-clip</mark>
+        </p>
+        <p>you probably remember that the <mark>background-size</mark> CSS property <strong>specifies the size of the
+                element's background image</strong>. To be more specific, it determines how the image should be scaled
+            and stretched within the element.</p>
+        <p>The <mark>background-clip</mark> property, on the other hand, defines <strong>how far the background(color or
+                image) extends within an element</strong>. This property becomes particularly useful when you have
+            border and padding applied to your element. The values for <mark>background-clip</mark> are:</p>
+        <ul>
+            <li>
+                <mark>border-box</mark> - the background extends to the outside edge of the border (default value). If
+                the element has a border, the background will be underneath it.
+            </li>
+            <li>
+                <mark>padding-box</mark> - the background extends to the outside edge of the padding. No background is
+                drawn beneath the border.
+            </li>
+            <li>
+                <mark>content-box</mark> - the background is painted within (and clipped to) the content box only.
+            </li>
+        </ul>
+        <div class="background-size-box">Background size box </div>
+
+        <h2>Box Shadows</h2>
+        <div class="box-shadow">Shadow box</div>
+
+    </main>
+
+    <footer class="footer"></footer>
+
+</body>
+
+</html>

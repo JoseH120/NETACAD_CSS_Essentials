@@ -1,0 +1,19 @@
+h1 {
+    color: rgb(0, 128, 0)
+}
+
+p {
+    color: #ff5733;
+}
+
+.vivid {
+    color: hsl(210, 100%, 50%)
+}
+
+a {
+    color: pink
+}
+
+.bg-article {
+    background-color: lightblue;
+}

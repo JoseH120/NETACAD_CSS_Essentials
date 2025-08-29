@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Properties</title>
+    <link rel="stylesheet" href="../styles/module2/misestilos.css">
+    <link rel="stylesheet" href="../styles/module2/listProperties.css">
+    <script src="../scripts/functions.js"></script>
+</head>
+
+<body>
+    <h1>List Properties</h1>
+    <h2>CSS Properties For Styling List</h2>
+    <button id="btn1" onclick="mostrarContenido('show1', 'btn1')">mostrar/ocultar contenido</button>
+    <div id="show1" hidden>
+        <section>
+            <h3>The List-Style-Type property</h3>
+            <p>
+                the <mark>list-style-type</mark> property <strong>defines the type of marker</strong> used for list
+                items
+            </p>
+            <ul>
+                <li><mark>disc</mark> reders a filled circle</li>
+                <li><mark>decimal</mark> renders decimal numbers</li>
+                <li><mark>circle</mark> renders an unfilled circle</li>
+                <li><mark>square</mark> reders a square</li>
+                <li><mark>lower-roman</mark> renders lowercase Roman numerls : i, ii, iii, iv,..</li>
+                <li><mark>lower-alpha</mark> lowercase letters: a, b, c...</li>
+                <li><mark>upper-alpha</mark> uppercase letters: A, B, C..., and more...</li>
+            </ul>
+            <p>For example</p>
+            <ul class="list-square">
+                <li>listed item 1</li>
+                <li>listed item 2</li>
+                <li>listed item 3</li>
+            </ul>
+        </section>
+        <hr>
+        <section>
+            <h3>The list-style-image property</h3>
+            <p>
+                The <mark>list-style-image</mark> property allows you to <strong>use an image as the list
+                    marker</strong>.
+                you can specify the URL of the image you want to use.
+            </p>
+            <ul class="image-marker-list">
+                <li>Listed item 1</li>
+                <li>Listed item 2</li>
+                <li>Listed item 3</li>
+            </ul>
+        </section>
+        <hr>
+        <section>
+            <h3>The List-Style-Position Property</h3>
+            <p>
+                The <mark>list-style-position</mark> <strong>determines whether the list marker appears inside or
+                    outside</strong> the list item's content box
+            </p>
+            <p>The two corresponding values are:</p>
+            <ul>
+                <li><mark>inside</mark> - the marker appears within the content box(default).</li>
+                <li><mark>outside</mark> - the marker appears outside the content box.</li>
+            </ul>
+            <p>For example:</p>
+            <ul class="inside-position-list">
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda vitae, tempore reiciendis debitis
+                    quaerat commodi nesciunt ullam facere numquam praesentium animi, voluptatibus dolores earum. Quod
+                    possimus illum doloribus distinctio et?</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita aperiam error, voluptatum commodi
+                    odit
+                    eveniet ipsam odio perferendis magni id quae, at corrupti quibusdam cumque distinctio necessitatibus
+                    iusto? Dolore, perspiciatis.</li>
+                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum in enim animi eveniet, minima
+                    dolore,
+                    quas excepturi voluptatem eius, natus nostrum atque nulla suscipit voluptate nisi magnam? Dolores,
+                    illo
+                    doloribus.</li>
+            </ul>
+        </section>
+        <hr>
+        <section>
+            <h3>Bringing It All together</h3>
+            <p>Example custom bullet list</p>
+            <ul class="custom-bullet-list">
+                <li>Apples</li>
+                <li>Bananas</li>
+                <li>Cherries</li>
+            </ul>
+            <p>Example custom number list</p>
+            <ol class="custom-number-list">
+                <li>First Step</li>
+                <li>Second Step</li>
+                <li>Third Step</li>
+            </ol>
+        </section>
+        <hr>
+        <section>
+            <h3>Styling Spacing in Lists</h3>
+            <p>In CSS you can manage the spacing using a combination of <mark>margin</mark> and <mark>padding</mark>
+                properties</p>
+            <ul>
+                <li>the <mark>margin</mark> property <strong>adds space around elements.</strong></li>
+                <li>the <mark>padding</mark> property <strong>adds space around an element's content</strong></li>
+            </ul>
+            <p>For example:</p>
+            <ul class="spaced-list">
+                <li>item 1: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima autem optio assumenda,
+                    beatae
+                    suscipit illum repellendus dolorem quae! Quo dolorum dolorem quidem ipsum atque vel expedita non
+                    repellendus nemo unde?</li>
+                <li>item 2: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima autem optio assumenda,
+                    beatae
+                    suscipit illum repellendus dolorem quae! Quo dolorum dolorem quidem ipsum atque vel expedita non
+                    repellendus nemo unde?</li>
+                <li>item 3: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima autem optio assumenda,
+                    beatae
+                    suscipit illum repellendus dolorem quae! Quo dolorum dolorem quidem ipsum atque vel expedita non
+                    repellendus nemo unde?</li>
+            </ul>
+        </section>
+        <hr>
+        <section>
+            <h3>Using the Line-Height Property</h3>
+            <p>
+                Unlike margin and padding which apply space outside and inside an element's border respectively,
+                <mark>line-height</mark> determines the vertical height of a line of text, <b>affecting the space
+                    between
+                    lines within a list item</b>
+            </p>
+            <ul class="spaced-list-2">
+                <li>Item 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dignissimos, beatae ipsum, ipsam
+                    officia vel officiis maiores doloribus aperiam modi aspernatur assumenda facere provident odit
+                    tempora,
+                    maxime eveniet eum iste!</li>
+                <li>Item 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dignissimos, beatae ipsum, ipsam
+                    officia vel officiis maiores doloribus aperiam modi aspernatur assumenda facere provident odit
+                    tempora,
+                    maxime eveniet eum iste!</li>
+                <li>Item 3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dignissimos, beatae ipsum, ipsam
+                    officia vel officiis maiores doloribus aperiam modi aspernatur assumenda facere provident odit
+                    tempora,
+                    maxime eveniet eum iste!</li>
+            </ul>
+        </section>
+    </div>
+    <div class="footer"></div>
+</body>
+
+</html>

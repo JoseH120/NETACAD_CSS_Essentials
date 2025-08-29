@@ -1,0 +1,48 @@
+.spaced-item {
+    display: flex;
+    list-style-type: none;
+}
+
+.spaced-item li {
+    line-height: 1.6;
+    margin: 10px;
+}
+
+a:link {
+    text-decoration: none;
+    color: pink;
+}
+
+a:hover {
+    background-color: black;
+    color: white;
+}
+
+a:active {
+    font-weight: bold;
+    color: black;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.link:link {
+    color: #0000EE;
+    text-decoration: underline;
+}
+
+.link:visited {
+    color: #551A8B;
+}
+
+.link:hover {
+    color: #FF0000;
+    background-color: #F0F0F0;
+    text-decoration: none;
+}
+
+.link:active {
+    color: #f00;
+    font-weight: bold;
+}

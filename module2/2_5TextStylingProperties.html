@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Font Properties</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/module2/misestilos.css">
+    <script src="../scripts/functions.js"></script>
+</head>
+
+<body>
+
+    <h1>CSS Text Styling Properties</h1>
+    <h3>Font Properties</h3>
+    <button onclick="mostrarContenido('example1', 'btn1')" id="btn1">mostrar ejemplos</button>
+    <div id="example1" hidden>
+        <section>
+            <h3>The Font-Family property</h3>
+            <p><mark>font-family</mark> <b>sets the preferred font</b> for text elements.</p>
+            <p style="font-family: 'Roboto', Arial, sans-serif;">Lorem ipsum dolor sit amet consectetur adipisicing
+                elit.
+                Quibusdam, accusamus. Nisi rem assumenda, aut neque
+                praesentium id sed maiores illo!</p>
+        </section>
+        <section>
+            <h3>The font-size property</h3>
+            <h1 style="font-size: 24px;">Fireflies</h1>
+            <ul>
+                <li>Pixels (px)</li>
+                <li>Ems (em)</li>
+                <li>Root Em (rem)</li>
+                <li>Percentage (%)</li>
+                <li>Absolute (xx-smal, x-small, small, medium, large, x-large, xx-large)</li>
+                <li>Named Sizes (larger, smaller)</li>
+            </ul>
+            <p>
+                <b>Relative units</b> (em, rem, %) are generally <b>preferred for responsive desing</b>,
+                as they adapt well to different screen sizes, whereas <b>absolute units</b>(px) provide <b>precise
+                    control</b> but might <b>not be as adaptable</b>
+            </p>
+        </section>
+        <section>
+            <h3>The Font-Weight property</h3>
+            <p><mark>font-weight</mark> <b>sets the thickness</b> of the font. Common values are <mark>normal</mark>
+                (default), <mark>bold</mark>, <mark>bolder</mark>, and <mark>lighter</mark></p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, laudantium ratione odio doloribus
+                voluptatem exercitationem rerum ad repudiandae quos animi <strong style="font-weight:900px;">quo, unde,
+                    corrupti eveniet sit</strong> dignissimos quam
+                enim. Non, eius?</p>
+        </section>
+        <section>
+            <h3>The Font-Style Property</h3>
+            <p>
+                <makr>font-style</makr> sets the style of the text, such as <mark>normal</mark> (default),
+                <mark>italic</mark> (typically has a cursive appearance), <mark>oblique</mark> (makes the text appear
+                slanted, similar to italic but without the cursive curves), and <mark>inherit</mark> (allows an element
+                to
+                inherit the <mark>font-style</mark> value from its parent element)
+            </p>
+            <br>
+            <h4>paragraph oblique style</h4>
+            <p style="font-style: oblique; font-size: large;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime deserunt, officia molestias incidunt
+                ipsam
+                iusto nesciunt autem libero, amet sint repudiandae obcaecati necessitatibus ad eum veritatis dolore
+                cupiditate cumque hic?
+            </p>
+            <br>
+            <h4>paragraph italic style</h4>
+            <p style="font-style: italic; font-size: large;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime deserunt, officia molestias incidunt
+                ipsam
+                iusto nesciunt autem libero, amet sint repudiandae obcaecati necessitatibus ad eum veritatis dolore
+                cupiditate cumque hic?
+            </p>
+            <br>
+            <h4>paragraph normal style</h4>
+            <p style="font-style: normal; font-size: large;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime deserunt, officia molestias incidunt
+                ipsam
+                iusto nesciunt autem libero, amet sint repudiandae obcaecati necessitatibus ad eum veritatis dolore
+                cupiditate cumque hic?
+            </p>
+            <br>
+            <h4>paragraph inherit style</h4>
+            <p style="font-style: inherit; font-size: large;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime deserunt, officia molestias incidunt
+                ipsam
+                iusto nesciunt autem libero, amet sint repudiandae obcaecati necessitatibus ad eum veritatis dolore
+                cupiditate cumque hic?
+            </p>
+        </section>
+    </div>
+
+    <h3>Text Properties</h3>
+    <button onclick="mostrarContenido('example2', 'btn2')" id="btn2">mostrar ejemplos</button>
+    <div id="example2" hidden>
+        <section>
+            <h3>The Color Property</h3>
+            <p>
+                <mark>color</mark> <b>defines text color</b> using various color formats such as hexadecimal codes, RGB
+                values, color names, and even HSL values like <makr>hsl(12, 100%, 100%)</makr>
+            </p>
+            <div style="color: red;">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, rem nam beatae maxime corporis sit
+                    similique in voluptatem praesentium ullam mollitia itaque quas odit officia odio alias deserunt
+                    delectus quis.</p>
+            </div>
+        </section>
+        <section>
+            <h3>The Text-Align Property</h3>
+            <p>
+                <mark>text-align</mark> <b>controls the alignment of the text within its container</b>. Possible values
+                are <mark>left</mark>, <mark>center</mark>, <mark>right</mark>, and <mark>justify</mark> (spreads text
+                to fill the entire width of the container)
+            </p>
+            <div>
+                <h4 style="text-align: center;">Fireflies</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum id libero explicabo asperiores,
+                    nulla numquam praesentium natus quis cupiditate eaque quae nisi sed officiis consequuntur recusandae
+                    accusamus dolorum quasi vitae.</p>
+            </div>
+        </section>
+        <section>
+            <h3>The Line-Height Property</h3>
+            <p>
+                <mark>line-height</mark> <b>sets the vertical spacing between lines of text</b>. It's often used to
+                improve
+                readability
+            </p>
+            <p>
+                You can set it to various values, such as specific <mark>number</mark> (which is a multiple of the
+                element's
+                font size), <mark>normal</mark> (default line height), or <mark>inherit</mark> (inherits the line height
+                from the parent element).
+            </p>
+            <div style="line-height: 1.5; text-align: center;">
+                <h4>Example Line Heigth</h4>
+                <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora amet
+                    velit
+                    modi dolorum, quis rerum quae
+                    tempore ea assumenda incidunt at animi a culpa dolore architecto omnis qui, perspiciatis sit!</p>
+            </div>
+        </section>
+        <section>
+            <h3>The Text-Transform Property</h3>
+            <p>
+                <mark>text-transform</mark> <strong>changes the case</strong> of the text. Values include
+                <mark>uppercase</mark>, <mark>lowercase</mark>, <mark>capitalize</mark>, and <mark>none</mark>(default,
+                no
+                transformation applied).
+            </p>
+            <p>For example:</p>
+            <div>
+                <h4 style="text-transform: uppercase; ">Fireflies</h4>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus excepturi et eum nulla commodi
+                    autem
+                    sequi, minus consequatur recusandae molestias debitis dicta pariatur, veritatis aliquam, corrupti
+                    non
+                    possimus accusamus vel.
+                </p>
+            </div>
+        </section>
+        <section>
+            <h3>The Text-Decoration Property</h3>
+            <p>
+                <mark>text-decoration</mark> <strong>controls the decoration of the text</strong>, such as underlines,
+                overlines, and line-through.
+            </p>
+            <p>
+                the values include <mark>underline</mark>, <mark>overline</mark>, <mark>line-through</mark> ( puts a
+                strikethrough over a text), and <mark>none</mark>
+            </p>
+            <p>For example</p>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dolorem molestiae
+                    cum impedit aliquam
+                </p>
+
+                <p style="text-decoration: overline;">
+                    assumenda natus libero modi animi ad ab, earum aliquid fuga omnis nemo nisi quibusdam exercitationem
+                    reprehenderit.
+                </p>
+            </div>
+        </section>
+        <section>
+            <h3>The Text-Shadow Property</h3>
+            <p>
+                <mark>text-shadow</mark> allows you to <strong>add a shadow effect to text</strong>, creating a visual
+                separation between the text and its background. This property adds a shadow <strong>behind</strong> the
+                text, providing depth and dimension to the typography. The shadow can be customized in terms of its
+                color,
+                position, and blur radius.
+            </p>
+            <p>
+                The syntax for the <mark>text-shadow</mark> property is as follows:
+            </p>
+            <div>
+                <pre><span>text-shadow</span>: horizontal-offset vertical-offset blur-radius color;</pre>
+            </div>
+            <ul>
+                <li><mark>horizontal-offset</mark> specifies the horizontal distance the shadow will be offset from the
+                    text. Positive values move the shadow to the right, while negative values move it to the left</li>
+                <li><mark>vertical-offset</mark> specifies the vertical distance the shadow will be offset from the
+                    text.
+                    Positive values move the shadow downwards, while negative values move it upwards.</li>
+                <li><mark>blur-radius</mark> determines the amount of blurring applied to the shadow. A larger value
+                    creates
+                    a more diffused shadow, while a smaller value produces a sharper shadow. </li>
+                <li><mark>color</mark> specifies the color of the shadow. This can be named color, hexadecimal code, and
+                    RGB
+                    value, or any other valid CSS color representation.</li>
+            </ul>
+            <div style="text-align: center; background-color: lightblue; ">
+                <h3 style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">This is a heading 3</h3>
+                <h4 style="text-shadow: 1px 1px 2px #555, -1px -1px 2px #555;">This is a subheading 4</h4>
+            </div>
+        </section>
+        <section>
+            <h3>The Letter- and Word-Spacing Properties</h3>
+            <p>
+                <mark>letter-spacing</mark> and <mark>word-spacing</mark> <strong>adjust the space between
+                    characters/words</strong> in the text. They accept length values (<mark>em</mark>, <mark>em</mark>,
+                <mark>%</mark>), <mark>normal</mark> values.
+            </p>
+            <p>For Example:</p>
+            <div>
+                <p style="letter-spacing: 1px; word-spacing: 4px;">Lorem ipsum, dolor sit amet consectetur adipisicing
+                    elit.
+                    Magni doloremque, nisi rem optio similique
+                    libero tempore corrupti exercitationem accusamus temporibus consequatur omnis ratione officiis eum
+                    magnam! Tempore sunt sapiente blanditiis?</p>
+            </div>
+        </section>
+    </div>
+
+</body>
+
+</html>

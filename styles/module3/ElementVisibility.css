@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+mark {
+    color: #f4f4f4;
+    background-color: #555;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+h4 {
+    font-weight: bolder;
+}
+
+.hidden {
+    display: none;
+}
+
+.menu-item {
+    display: inline;
+    background-color: yellow;
+    margin: 0px 10px 0px 0px;
+    /* margin-right: 10px; */
+    padding: 5px;
+}
+
+.block-element {
+    display: block;
+    background: lightblue;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.inline-block-element {
+    display: inline-block;
+    background: lightcoral;
+    margin: 5px;
+    padding: 10px;
+}
+
+.hidden-element {
+    visibility: hidden;
+}

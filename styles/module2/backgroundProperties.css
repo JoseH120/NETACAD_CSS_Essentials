@@ -1,0 +1,48 @@
+.header1 {
+    background-image: url("https://edube.org/uploads/media/default/0001/03/sunflowers_sunset_full.jpg");
+    height: 500px;
+    text-align: center;
+    color: white;
+}
+
+.header2 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 100px
+}
+
+.header3 {
+    background-color: #ff9900;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: overlay;
+    padding-top: 100px;
+}
+
+.box {
+    width: 400px;
+    height: 300px;
+    border: 1px solid #000;
+    overflow: scroll;
+    background-image: url("https://edube.org/uploads/media/default/0001/03/eodg_grey_fav.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.header4 {
+    background-image: linear-gradient(to bottom, #ff9900, #ffcc00);
+    height: 500px;
+    text-align: center;
+    color: white;
+    padding-top: 100px;
+}
+
+.header5 {
+    background-image: radial-gradient(circle, #ff9900, #ffcc00);
+    height: 500px;
+    text-align: center;
+    color: white;
+    padding-top: 100px;
+}

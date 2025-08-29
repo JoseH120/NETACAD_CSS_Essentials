@@ -1,0 +1,54 @@
+.img1 {
+    width: 600px;
+    height: 300px;
+}
+
+.img2 {
+    max-width: 100%;
+    max-height: 80%;
+}
+
+.img3 {
+    object-fit: cover;
+}
+
+.img4 {
+    object-position: center top;
+}
+
+.img5 {
+    border: 2px solid #000;
+}
+
+.img6 {
+    border-radius: 50%;
+}
+
+.box {
+    width: 600px;
+    height: 300px;
+    background-color: green;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.5), 5px 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.img8 {
+    filter: grayscale(50%);
+}
+
+.boxes {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.box1 {
+    background-color: red;
+    z-index: 1;
+}
+
+.box2 {
+    background-color: green;
+    z-index: 2;
+    top: 1rem;
+    left: 1rem;
+}

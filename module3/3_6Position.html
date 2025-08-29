@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning in CSS</title>
+    <link rel="stylesheet" href="../styles/module3/Positioning.css">
+    <script src="../scripts/functions.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="fixed-nav">
+            Fixed Navigation
+        </div>
+    </header>
+    <main class="content">
+        <h1>Understanding Positioning in CSS</h1>
+        <button id="btn0" onclick="mostrarContenido('cont0', 'btn0')">mostrar/ocultar</button>
+        <div id="cont0" hidden>
+            <p>is an essential concept that empowers you to <strong>manage the arrangement of elements</strong> on a web
+                page with precision. This section highlights five key positioning </p>
+            <div class="img"></div>
+        </div>
+        <button id="btn1" onclick="mostrarContenido('cont1', 'btn1')">mostrar/ocultar</button>
+        <div id="cont1" hidden>
+            <section>
+                <h2>Static positioning.</h2>
+                <p>static is <strong>the default positioning behavior</strong> for HTML element in CSS</p>
+                <p>When an element is set to <mark>static positioning</mark>,it is displayed in the normal flow of the
+                    document, following the order in which it appears in the HTML code.</p>
+                <p>it is not affected by the <mark>top</mark>, <mark>right</mark>, <mark>bottom</mark>, or
+                    <mark>left</mark>
+                    properties, which means it remains exactly whre it would be placed in the document without any CSS
+                    positioning applied.
+                </p>
+                <p>In simpler terms, elements with static positioning are laid out on the web page as if you didn't
+                    apply
+                    special positioning rules to them.</p>
+            </section>
+            <section>
+                <h2>Absolute positioning.</h2>
+                <p>Absolute positioning allows you to strong{place an element at a specific position relative to its
+                    closest
+                    positioned ancestor (an element that is not set to <mark>position: static</mark>) If there is no
+                    positioned ancestor, the element is positioned relative to the initial containing block (usually the
+                    viewport)</p>
+                <p>For example</p>
+                <div class="container1">
+                    <div class="absolute-box">Absolute positioning</div>
+                </div>
+            </section>
+            <section>
+                <h2>Relative Positioning</h2>
+                <p>Allows you to <strong>adjust the position of an element relative to its normal position in the
+                        document
+                        flow</strong>. It doesn'take the element out of the normal document flow, which means it will
+                    still
+                    occupy space in its original position.</p>
+
+                <div class="container2">
+                    <div class="relative-box">
+                        relative positioning
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>Fixed Positioning</h2>
+                <p>Fixed positioning allows you to <strong>fix an element's position relative to the viewport</strong>,
+                    meaning it will stay in the same position even when the page is scrolled. This is often used for
+                    elements like navigation bars or "back to top" buttons that need to remain visible as the user
+                    scrolls.
+                </p>
+
+            </section>
+            <section>
+                <h2>Sticky Positioning</h2>
+                <p>Sticke positioning allows <strong>an element to stick to the user's screen as they scroll</strong>.
+                    It
+                    behaves like a hybrid between <mark>relative</mark> and <mark>fixed</mark> positioning</p>
+                <p>The element is treated as relative until it reaches a certain point during scrolling , at which it
+                    becomes
+                    <mark>fixed</mark>
+                </p>
+                <p>This is particularly useful for elements like headers or navigation bars that you want to keep
+                    visible as the user scrolls through a page.</p>
+                <p>as you scroll dow the page, the sub-header will 'stick' to the top of the viewport.</p>
+                <p>The <mark>top:0</mark> value is crucial as it defines the threshold at which the sticky behavior
+                    triggers.</p>
+            </section>
+
+        </div>
+
+    </main>
+</body>
+
+</html>
