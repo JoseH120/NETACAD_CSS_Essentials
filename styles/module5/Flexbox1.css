@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin: auto;
+    background-image: linear-gradient(to bottom, lightgreen, coral);
+    z-index: -1;
+    width: 90%;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: inherit;
+    width: inherit;
+}
+
+p {
+    line-height: 1.4;
+}
+
+img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 150px;
+    max-height: 300px;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+mark {
+    background-color: #555;
+    color: whitesmoke;
+    border-radius: 15px;
+    padding: 3px;
+}
+
+article {
+    border: 1px solid #000;
+    border-radius: 15px;
+    justify-items: center;
+}

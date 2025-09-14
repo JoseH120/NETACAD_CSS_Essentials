@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.container {
+    /* Clearing floats */
+    overflow: hidden;
+}
+
+.grid-item1,
+.grid-item2 {
+    /* Float items to align side by side */
+    float: left;
+    /* 2 columns, hence 50% width */
+    width: 50%;
+    /* Includes padding and border in width calculation */
+    box-sizing: border-box;
+    /* Optional padding for spacing */
+    padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .grid-item2 {
+        width: 100%;
+    }
+}

@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+mark {
+    color: whitesmoke;
+    background-color: #555;
+    padding: 3px;
+    border-radius: 5px;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+    overflow: auto;
+}
+
+.column {
+    float: left;
+    /* width: 33.33%; */
+}
+
+.equal {
+    width: 33.33%;
+}
+
+ul li {
+    line-height: 1.6;
+}
+
+.large {
+    width: 50%;
+}
+
+.medium {
+    width: 30%;
+}
+
+.small {
+    width: 20%;
+}
+
+.footer {
+    height: 150px;
+}

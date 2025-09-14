@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MultiColumn layouts 1</title>
+    <link rel="stylesheet" href="../styles/module4/MultiColumnLayout.css">
+</head>
+
+<body>
+    <h1>Creating multi-column layouts using CSS floats.</h1>
+
+    <main>
+        <h3>Defining containers and creating columns</h3>
+        <p>
+            First- as you surely remember - you need a container that will hold your columns. This container is the
+            parent element to the child elements that will serve as your columns:
+        </p>
+        <p>
+            Inside the container, you add your columns. These are typically <mark>div</mark> elements that you'll float
+            to align side by side.
+        </p>
+
+        <h3>Applying floats to the columns.</h3>
+        <div class="container">
+            <!-- Columns will go here. -->
+            <div class="column equal">column 1</div>
+            <div class="column equal">column 2</div>
+            <div class="column equal">column 3</div>
+        </div>
+        <br>
+        <p>Within our code:</p>
+        <ul>
+            <li>the <mark>float:left</mark> rule ensures each column aligns to the left side of the container placin
+                them side by side. </li>
+            <li><mark>widt:33.33%</mark> sets he width to 33.33% for each column, which ensures that they each take up
+                one-third of the container's width, creating equal-width columns.</li>
+        </ul>
+        <p>
+            As a result, we achive a multi-column layout composed of three equally sized columns aligned horizontally.
+        </p>
+        <h3>Creating a multi-column layout with varying widths</h3>
+        <p>
+            Now, let's explore an example of how to you can use CSS floats to construct a multi-column layout with
+            varying widths
+        </p>
+        <p>
+            In our HTML structure, we define a container and specify the width for each column inside it. In our CSS
+            layout, we float the columns using the <mark>.column</mark> class and the <mark>float:left</mark> rule to
+            arrange them horizontally.
+        </p>
+        <p>
+            we set the column widths with the <mark>large</mark>, <mark>medium</mark>,and <mark>small</mark> classes,
+            each with different width percentages. We add padding for spacing and improved readability.
+        </p>
+        <div class="container">
+            <div class="column large">Large Column</div>
+            <div class="column medium">Medium Column</div>
+            <div class="column small">Small Column</div>
+        </div>
+
+        <h3>The collapsing parent problem</h3>
+        <p>
+            After applying the <mark>float</mark> property to elements, these elements are taken out of the normal
+            document flow. This means that they don't affect the layout of subsequent elements the usual way.
+        </p>
+        <h3>Clearing floats with the clearfix technique</h3>
+        <p>
+            After using floated columns, It's important to clear the floats to maintain the normal flow for subsequent
+            elements.</p>
+        <p>
+            in the previous section you learned about the <mark>clear</mark> property which we used <strong>directly on
+                a specific element</strong> to prevent it from being adjacent to floated elements on either or both
+            sides. This time, we'll use the <q>clearfix</q>, which will be applied to a parent container of floated
+            elements. We will use it to clear the floats of its children so that the parent container doesn't collapse
+            and correctly contains the floated elements.
+        </p>
+        <p>
+            Clearfix works by <strong>adding a pseudo-element, such as <mark>::after</mark>, to the parent
+                container</strong>. This pseudo-element is styled in a way that it clears the float, thus making the
+            container recognize the heightof its floated children.
+        </p>
+
+        <p>
+            In our code:
+        </p>
+        <ul>
+            <li>We use the <mark>::after</mark> pseudo-element, which is a special type of selector in CSS, that allows
+                us to insert content after the content of an element. In the case of clearfix, we use it to insert an
+                invisible "element" at the end of the container.</li>
+            <li>the <mark>content:"";</mark> rule, which is essential for the pseudo-element to work, generates content,
+                but we keep it empty</li>
+            <li>the <mark>display:table;</mark> rule changes the display type, which helps in the clearing process.</li>
+            <li>the <mark>clear:both;</mark> rule clears the float from both the left and right sides. This action
+                forces the container to expand and encompass the floated elements, thus solving the collapsing issue.
+            </li>
+        </ul>
+
+        <h3>Why and when to use clearfix</h3>
+        <ul>
+            <li>to ensure that a parent container fully wraps around its floated children</li>
+            <li>to maintain the intented layout, particularly when subsequent content follows the floated elements.</li>
+            <li>as a cleaner solution compared to adding extra non-semantic markup (like empty <mark>div</mark>
+                elements) to clear floats</li>
+        </ul>
+        <h3>Clear vs Clearfix</h3>
+        <p>In general</p>
+        <ul>
+            <li><mark>clear</mark> is about managing the layout flow of individual elements in relation to floated
+                items.</li>
+            <li><q>clearfix</q> is a broader technique to ensure that a container property its floated children, thus
+                maintaining the integrity of the overall layout</li>
+        </ul>
+        <p>
+            In other words, use <mark>clear</mark> to fine-tune specific elements, and use the <q>clearfix</q> technique
+            to address the layout behavior of an entire container
+        </p>
+        <h3>The overflow method</h3>
+        <p>
+            Before we move on, we want to show you one more method to clear floats besides the traditional
+            <mark>clear</mark> and the <q>clearfix</q> technique - the <mark>overflow</mark> property.
+        </p>
+        <p>
+            You can use the <mark>overflow</mark> property on the parent container. This is a simpler method but can
+            have unintended effects if your content is meant to extend outside the container.
+        </p>
+
+    </main>
+    <!-- <footer class="footer"></footer> -->
+</body>
+
+</html>

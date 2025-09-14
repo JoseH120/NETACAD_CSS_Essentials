@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin: auto;
+    width: 90%;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-container>div {
+    background-color: lightblue;
+    padding: 10px;
+    margin: 5px;
+    flex-grow: 1;
+}
+
+mark {
+    background-color: #555;
+    color: whitesmoke;
+    border-radius: 15px;
+    padding: 3px 5px;
+}

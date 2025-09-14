@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <link rel="stylesheet" href="../styles/module4/MediaQueries.css">
+</head>
+
+<body>
+    <h1>Introduction to media queries</h1>
+    <h2>Media query syntax.</h2>
+    <pre>@media screen and (max-width: 600px){
+    /* CSS rules for screens smaller than or equal to 600px */  
+}</pre>
+    <p>Let's analyze the elements of the syntax:</p>
+    <ol>
+        <li><mark>&commat;media</mark> - the key term that starts a media query it tells the browser to apply the
+            following CSS rules only under certain conditions (which you'll need to define next).</li>
+        <li><mark>screen</mark> - the media type. It specifies the type of device you're targeting. While
+            <mark>screen</mark> is the most common media type for web designs, targeting computers screens, tablets and
+            smartphones, there are other types too, like <mark>print</mark> (for printes) and <mark>all</mark> (for all
+            media types).
+        </li>
+        <li><mark>and</mark> - a logical operator used to combine multiple media features. In this case, It's combining
+            the media type <mark>screen</mark> with a feature query <mark>(max-width:600px)</mark> </li>
+        <li><mark>(max-width:600px)</mark> - the media feature and value. It specifies the condition that needs to be
+            met for the CSS rules to apply. Here, <mark>(max-width:600px)</mark> means that the enclosed CSS rules will
+            only applied to screens that are 600 pixels wide or narrower. In general, <mark>max-width</mark> is a
+            feature that refers to the maximum width of the display area, such as a browser window.</li>
+        <li><mark>Enclosed CSS Rules</mark> - inside the curly braces <mark>{...}</mark> you place your CSS rules. These
+            rules will be applied only when the media query condition is true (in this case, when screen width is less
+            than or equal to 600 pixels).</li>
+    </ol>
+
+    <h2>Single Column Layout on Mobile</h2>
+    <p>We'll start with a basic two-column layout that stacks into a single column on smaller screens.</p>
+    <p>Here's how you can achieve it:</p>
+    <div class="container">
+        <div class="column">Column 1</div>
+        <div class="column">Column 2</div>
+    </div>
+    <p>Let's analyze the code:</p>
+    <ul>
+        <li><strong>Basic two-column layout</strong> - each <mark>.column</mark> takes up 50% of the
+            <mark>.container</mark>'s width, creating a side-by-side layout.
+        </li>
+        <li><strong>Media Query for Mobile</strong> - the <mark>@media</mark> rule targets screens smaller than or equal
+            to 600px.</li>
+        <li><strong>changing to simple column</strong> - inside the media query, <mark>.column</mark>'s width is changed
+            to 100%, and <mark>float</mark> is set to <mark>none</mark>. This stacks the columns vertically on smaller
+            screens.</li>
+    </ul>
+    <h2>Adjusting column layout for tablet and mobile</h2>
+    <p>Now, let's create a layout that adjust from three columns to two on tablets and to one on mobile phones.</p>
+    <p>Take a look at the following example:</p>
+    <div class="container">
+        <div class="column">Column 1</div>
+        <div class="column">Column 2</div>
+        <div class="column">Column 3</div>
+    </div>
+</body>
+
+</html>

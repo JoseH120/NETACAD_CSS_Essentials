@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Of Floats</title>
+    <link rel="stylesheet" href="../styles/module4/BasicOfFloats.css">
+    <script src="../scripts/functions.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Basic of floats</h1>
+    </header>
+
+    <main>
+        <section>
+            <h1>The float property and its values.</h1>
+            <p>
+                The <mark>float</mark> property in CSS is used to <strong>place an element to the left or right side of
+                    its container</strong>, allowing other elements to wrap around it. It's commonly used for
+                <strong>wrapping text around images or create simple layouts</strong>
+            </p>
+            <p>
+                imagine you have an image that you wish to position on the left side of your page, and you want your
+                text to elengatly flow around it instead of appearing below it. This is precisely where the
+                <mark>float</mark> property proves to be exceptionally useful:
+            </p>
+            <button id="btn1" onclick="mostrarContenido('container1', 'btn1', 'imagen')">mostrar/ocultar
+                ejemplo</button>
+            <div class="container1" id="container1" hidden>
+                <img src="https://edube.org/uploads/media/default/0001/03/sunflowers_sunset_full.jpg"
+                    class="float-left">
+                <p>This text wraps around the floated image.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac libero et velit fermentum finibus.
+                    Sed id magna nec est facilisis vehicula. Vivamus efficitur, odio eget fringilla varius, dui massa
+                    efficitur tellus, non posuere justo ligula sit amet nulla. Proin at orci quis justo convallis
+                    sollicitudin. Quisque eget tellus eget odio luctus vehicula nec a lorem. In hac habitasse platea
+                    dictumst. Sed posuere mi vitae mi tincidunt, in vulputate mi tincidunt. Integer a fermentum quam.
+                    Vivamus in purus in urna efficitur semper. Nulla facilisi. Vivamus vel convallis felis. Aenean et
+                    metus non odio fermentum euismod eget a risus. Curabitur lacinia libero a enim congue, nec lacinia
+                    velit vulputate. Integer interdum, odio in congue tristique, justo elit scelerisque felis, in
+                    vestibulum erat elit a libero. Donec auctor lectus eget mi dapibus, eget sollicitudin urna iaculis.
+                </p>
+            </div>
+            <p>The <mark>float</mark> property can take the following values:</p>
+            <ul>
+                <li><mark>left</mark> causes the element to float to the left of its containing block, allowing text and
+                    inline elements to wrap around its right side.</li>
+                <li><mark>right</mark> - causes the element to float to the right of its containing block, with text and
+                    inline elements wrapping around its left side.</li>
+                <li><mark>none</mark> - the default value.</li>
+                <li><mark>inherit</mark> - specifies that the element should inherit the float value from its parent
+                    element.</li>
+                <li><mark>inline-start</mark> - floats the element towards the start of the inline direction. For
+                    example, in left-to-right languages(like English), inline-start would float the element to the left,
+                    similar to <mark>float:left</mark>. In right-to-left languages (like Arabic), it would float the
+                    element to the right.</li>
+                <li><mark>inline-end</mark> - floats the element towards the end of the inline direction. In
+                    left-to-right languages, it would be equivalent to <mark>float:right</mark>, floating the element to
+                    the right. In right-to-left languages, it would float the element to the left</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Clearing floats</h2>
+            <p>
+                Sometimes, floating elements can disrupt the flow of the layout. in such cases, you can use the
+                <mark>clear</mark> property to prevent elements from wrapping around floated elements.
+            </p>
+        </section>
+        <section>
+            <article>
+                <h2>Default behavior of div elements</h2>
+                <p>
+                    To understand the impact of the float property and the use of <mark>clear</mark>, it's essential to
+                    first recognize the default behavior of <mark>div</mark> elements.
+                </p>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <p>
+                    here, each <mark>div</mark> element is a block-level element, which means they naturally appear on a
+                    new line, one after the other, vertically from top to bottom.
+                </p>
+            </article>
+            <!-- <button id="btn2" onclick="mostrarContenido('container2','btn2',' div elements')">mostrar/ocultar div
+                elements</button> -->
+            <article>
+                <h2>Impact of applying <span>float:left</span></h2>
+                <p>Now, let's consider an example where <mark>float:left</mark> is applied to each <mark>div</mark></p>
+                <div class="container2" id="container2">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+                <p>This paragraph does not below of float: left </p>
+            </article>
+            <article class="clear-left ">
+                <h2>Using clear to reset float behavior</h2>
+                <div class="container2" id="container3">
+                    <div>1</div>
+                    <div>2</div>
+                    <div class="clear-left">3</div>
+                </div>
+            </article>
+            <p class="clear-both">
+                by using <mark>clear</mark>, you can control how and where elements are poistioned in relation to
+                floated items, allowing for more complex and organized layouts.
+            </p>
+        </section>
+
+        <section>
+            <h2>Values of the clear property</h2>
+            <ul>
+                <li><mark>none</mark> - the default value. It allows the element to be next to floated elements.</li>
+                <li><mark>left</mark> - the element is moved down to clear past elements floated to the left</li>
+                <li><mark>right</mark> - the element is moved down to clear past elements floated to the right</li>
+                <li><mark>both</mark> - the element is moved down to clear past elements floated on both sides.</li>
+            </ul>
+        </section>
+
+        <div class="footer"></div>
+
+    </main>
+</body>
+
+</html>

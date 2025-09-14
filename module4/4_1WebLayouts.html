@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS layout options</title>
+    <link rel="stylesheet" href="../styles/module4/WebLayout.css">
+    <script src="../scripts/functions.js"></script>
+</head>
+
+<body>
+    <h1>what is a web layout</h1>
+    <h2>Types of web layouts</h2>
+    <button id="btn1" onclick="mostrarContenido('container', 'btn1', 'imagen')">mostrar/ocultar imagen</button>
+    <div class="container" id="container" hidden>
+        <img src="../res/img2.png" alt="Types of web layouts">
+    </div>
+    <p>Let's list them and discuss their main characteristics:</p>
+
+    <ol>
+        <li>Fixed Layout:</li>
+        <ul>
+            <li>has a set width (usually measured in pixels) and does nto change size based on the browser window.</li>
+            <li>is best suited for desings where precise control over width and spacing is required.</li>
+            <li>can be come less user-friendly on devices with screen sizes different from the one the website was
+                designed for.</li>
+        </ul>
+        <li>Liquid or fluid layout</li>
+        <ul>
+            <li>uses percentages instead of fixed pixel values for widths.</li>
+            <li>stretches and contracts with the browser window, filling the available space.</li>
+            <li>is more adaptable than fixed layouts, but can sometimes lead to uneven or stretched content if not
+                managed carefully</li>
+        </ul>
+        <li>Elastic layout</li>
+        <ul>
+            <li>combines fixed and fluid layouts using relative units like ems for widths.</li>
+            <li>scales depending on the user's font size settings, making the layout accessible but also pontetially
+                unpredictable in terms of its structure.</li>
+        </ul>
+        <li>Flexible layout</li>
+        <ul>
+            <li>a mix of fluid and elastic but with more control.</li>
+            <li>often incorporates media queries to change styles based on different device characteristics, leading to
+                a responsive desing. </li>
+        </ul>
+        <li>Responsive design</li>
+        <ul>
+            <li>an advanced form of flexible layout</li>
+            <li>uses CSS media queries to adapt the layout to different screen sizes and orientations, ensuring optimal
+                viewing experience on any device.</li>
+            <li>often involves flexible grids, scalable images, and sometimes different content for different devices.
+            </li>
+        </ul>
+        <li>Adaptive desing</li>
+        <ul>
+            <li>similar to responsive design - uses distinct layouts for different screen sizes.</li>
+            <li>instead of one fluid layout, it often has several fixed layouts designed for specific screen sizes.</li>
+        </ul>
+    </ol>
+</body>
+
+</html>

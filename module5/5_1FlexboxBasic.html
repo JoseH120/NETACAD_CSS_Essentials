@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="../styles/module5/Flexbox1.css">
+</head>
+
+<body>
+    <main>
+        <h1>Getting started with Flexbox</h1>
+        <article>
+            <h2>Controlling Layout With MainAxis And CrossAxis</h2>
+            <ul>
+                <li><strong>Main Axix</strong> - The primary axis along which flex items are laid out. By default,
+                    it's
+                    <strong>horizontal</strong>
+                </li>
+                <li><strong>Cross Axis</strong> - perpendicular to the main axis. By default it's vertical</li>
+            </ul>
+        </article>
+        <article>
+            <h2>The flex container and flex items</h2>
+            <p>Flexbox revolves around two key concepts: the flex containers and the flex items.</p>
+            <div>
+                <img src="../res/img4.png" alt="">
+            </div>
+        </article>
+        <article>
+            <h2>The flex container</h2>
+            <p>you create a flex container by setting the <mark>display</mark> property of an element to
+                <mark>flex</mark> (or <mark>inline-flex</mark> if you want inline layout). This elements becomes
+                <strong>the flex container</strong>, and its children become <strong>the flex items</strong>
+            </p>
+        </article>
+        <article>
+            <h3>The flex-direction property</h3>
+            <p>The <mark>flex-direction</mark> property determines the main axis of the layout, defining the direction
+                flex items are placed in the flex container. It can be <mark>row</mark>, <mark>column</mark>,
+                <mark>row-reverse</mark>, and <mark>column-reverse</mark>
+            </p>
+            <div>
+                <img src="../res/img5.png" alt="">
+            </div>
+        </article>
+        <article>
+            <h3>The justify-content property</h3>
+            <p>The <mark>justify-content</mark> property aligns flex items along the main axis(horizontal by default).
+                It can be used to space out items or align them at the start, end, center, or distribute space between
+                or around them.</p>
+            <div>
+                <img src="../res/img6.png" alt="">
+            </div>
+        </article>
+        <article>
+            <h3>The align-items property</h3>
+            <p>The <mark>align-items</mark> property aligns flex items along the cross axis (perpendicular to the main
+                axis).It's used for aligning items to the start, end, center, or stretching them to fill the container.
+            </p>
+            <div>
+                <img src="../res/img7.png" alt="">
+            </div>
+        </article>
+        <article>
+            <h3>The flex-wrap property</h3>
+            <p>By default, flex items try to fit into one line. The <mark>flex-wrap</mark> property allows the item to
+                wrap as needed onto multiple lines, from top to bottom.</p>
+            <div>
+                <img src="../res/img8-flex-wrap.png" alt="">
+            </div>
+        </article>
+        <article>
+            <h2>The flex items</h2>
+            <p>Flex items are <strong>the children of the flex container</strong> and are <strong>the individual
+                    elements you want to lay out</strong></p>
+            <p>Each flex item can also have properties applied to it, which define how it grows, shrinks, and how it
+                should be aligned within the flex container.</p>
+        </article>
+        <article>
+            <h3>The flex-grow property</h3>
+            <p>The <mark>flex-grow</mark> property defines the ability for a flex item to growif necessary. It accepts a
+                unitless value that serves as a proportion. It dictates what amount of the available space inside the
+                flex container the item should take up.</p>
+        </article>
+        <article>
+            <h3>The flex-shrink property</h3>
+            <p><mark>flex-shrink</mark> property defines the ability for a flex item to shrink if necessary. similarly
+                to <mark>flex-grow</mark>, it accepts a unitless values that serves as a proportion.</p>
+
+        </article>
+        <article>
+            <h3>The flex-basis property</h3>
+            <p><mark>flex-basis</mark> property defines the dafault the ability size of an element before the remaining
+                space is distributed. It can be a length (like <mark>20%</mark>, <mark>5rem</mark>, etc) or a keyword
+                like <mark>auto</mark></p>
+            <div><img src="../res/img9-flex-wrap.png" alt=""></div>
+        </article>
+        <article>
+            <h3>The flex property</h3>
+            <p><mark>flex</mark> property is the shorthand for <mark>flex-grow</mark>, <mark>flex-shrink</mark>, and
+                <mark>flex-basis</mark> combined. Its default value is <mark>0 1 auto</mark>, but you can set it with
+                one, two, or three values to control the item's flexibility
+            </p>
+        </article>
+        <article>
+            <h3>The align-self property</h3>
+            <p><mark>align-self</mark> property allows the default alingment (or the one specified by align-items) to be
+                overridden for individual flex items.</p>
+            <div>
+                <img src="../res/img10-align-self.png" alt="">
+            </div>
+        </article>
+    </main>
+</body>
+
+</html>

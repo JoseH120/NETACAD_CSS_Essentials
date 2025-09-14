@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+/* TEXT WRAPPING AROUND AN IMAGE */
+.float-left {
+    float: left;
+    /* space between the image and the text */
+    margin-right: 10px;
+}
+
+.text-image-container img {
+    width: 200px;
+    height: auto;
+}
+
+.text-image-container p {
+    text-align: justify;
+}
+
+/* NAVIGATION BAR WITH FLOAT */
+.navbar {
+    background-color: lightblue;
+    /* Clear the floats */
+    overflow: hidden;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-item {
+    float: left;
+    padding: 10px 15px;
+}
+
+.menu-item:hover {
+    background-color: lightgray;
+}
+
+/* TESTIMONIAL SECTION WITH FLOATS */
+.testimonial-section {
+    /* clear the floats */
+    overflow: hidden;
+}
+
+.testimonial {
+    float: left;
+    /* 3 testimonial per row */
+    width: 33.33%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin: 10px;
+    box-shadow: 2px 2px 5px #aaa;
+}
+
+.testimonial p {
+    font-style: italic;
+}
+
+.testimonial h4 {
+    font-weight: normal;
+    text-align: right;
+    margin-top: 10px;
+}
