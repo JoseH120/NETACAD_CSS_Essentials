@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14pxl;
+}
+
+details summary {
+  background: #c3c3c3;
+  width: 670px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  margin-top: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.flex-container-grow {
+  display: flex;
+  background: #f7f7f7;
+  padding: 10px;
+}
+
+.flex-container-grow div {
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin: 5px;
+  /* items will grow equally */
+  flex-grow: 1;
+}
+
+.flex-container-shrink {
+  display: flex;
+  background: #f7f7f7;
+  padding: 10px;
+  max-width: 500px;
+}
+
+.flex-container-shrink div {
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin: 5px;
+  /* Set initial width */
+  width: 200px;
+  /* Items will shrink at an equal rate */
+  flex-shrink: 1;
+}
+
+.flex-container-basis {
+  display: flex;
+  background-color: #f7f7f7;
+  padding: 10px;
+}
+
+.flex-container-basis div {
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin: 5px;
+  flex-basis: 100px;
+  flex-grow: 1s;
+}
+/* if you uncomment the follow css rule you're not gonna see the below of the item css rules */
+/* 
+.flex-container-shorthand {
+  display: flex;
+} */
+
+.flex-container-shorthand div {
+  flex: 1 2 150px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin: 5px;
+}
+
+.flex-container-align-item {
+  display: flex;
+  background: #e3e3e3;
+  /* Default alingment for all times. */
+  align-items: center;
+  /* to better demonstrate alignment */
+  height: 200px;
+  border: 1px solid #ccc;
+}
+
+.item {
+  /* items take up equal space */
+  flex: 1;
+  background-color: #4caf50;
+  padding: 10px;
+}
+
+.item.special {
+  /* This item is aligned to the start of the cross axis */
+  align-self: flex-start;
+}

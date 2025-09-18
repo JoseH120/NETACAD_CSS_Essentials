@@ -1,38 +1,123 @@
-mark{
-    background-color: #555;
-    color: whitesmoke;
-    padding: 3px 5px;
-    border-radius: 5px;
+mark {
+  background-color: #555;
+  color: whitesmoke;
+  padding: 3px 5px;
+  border-radius: 5px;
 }
-details{
-    width: 620px;
-}
-
-details>summary{
-    padding: 2px 6px;
-    margin-top: 10px;
-    width: 15em;
-    background-color: #dddddd;
-    border: none;
-    box-shadow: 3px 3px 4px black;
-    cursor: pointer;
+details {
+  width: 70%;
 }
 
-details:open > summary{
-    background-color: #ccccff;
+details > summary {
+  padding: 2px 6px;
+  margin-top: 10px;
+  width: 15em;
+  background-color: #dddddd;
+  border: none;
+  box-shadow: 3px 3px 4px black;
+  cursor: pointer;
 }
 
+details:open > summary {
+  background-color: #ccccff;
+}
+
+.example1 {
+  display: flex;
+  background: #e3e3e3;
+  padding: 10px;
+  border: 1px solid #cccccc;
+}
+
+.example2 {
+  display: flex;
+  flex-direction: row;
+}
+.example2 div {
+  margin: 5px;
+  padding: 10px;
+  background: #4caf50;
+}
+
+.example3 {
+  display: flex;
+  justify-content: space-around;
+  background: #e3e3e3;
+  padding: 10px;
+  border: 1px solid #cccccc;
+}
+
+.example3 div {
+  padding: 10px;
+  background: darksalmon;
+}
+
+.example4 {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  background: #e3e3e3;
+  border: 1px solid #cccccc;
+}
+
+.example4 div {
+  padding: 10px;
+  background: darksalmon;
+  width: 100px;
+  border: 1px solid;
+}
+
+.example5 {
+  display: flex;
+  flex-wrap: wrap;
+  background: #e3e3e3;
+  padding: 10px;
+  border: 1px solid #cccccc;
+}
+
+.example5 div {
+  width: 100px;
+  padding: 10px;
+  margin: 5px;
+  background: darksalmon;
+}
+
+.example6 {
+  display: flex;
+  flex-flow: row wrap;
+  background: #e3e3e3;
+  column-gap: 5px;
+  align-items: center;
+  height: 100px;
+}
+
+.example6 .items {
+  flex-grow: 1;
+  padding: 10px;
+  background: darksalmon;
+}
+
+.example6 .item1 {
+  flex-grow: 2;
+}
 
 .flex-container {
-    display: flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #e3e3e3;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  height: 300px;
 }
 
-.example1{
-    display: flex;
-    background: #e3e3e3;
-}
-
-.example2{
-    display: flex;
-    flex-direction: row;
+.flex-item {
+  flex: 1 1 100px;
+  margin: 5px;
+  padding: 10px;
+  background: #4caf50;
+  text-align: center;
+  border: 1px solid #333;
 }

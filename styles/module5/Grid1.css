@@ -1,0 +1,32 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* #STEP 1 Create structure of the container */
+/* #STEP 2 Create a grid container */
+.grid-container {
+  display: grid;
+  /* Creates three columns */
+  grid-template-columns: auto auto auto;
+  /* Creates one row , height determined by content */
+  grid-template-rows: auto;
+  /* Space between grid items */
+  gap: 10px;
+  background: #e3e3e3;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+/* #STEP 3 Position the items in the grid */
+.grid-item {
+  /* Common styles for grid items */
+  background: lightblue;
+  padding: 10px;
+}
+
+/* The following css rule set's the first child to be the in the first column and the first row */
+.grid-item:nth-child(1) {
+  /* this property specifies that the first .grid-item should start at column line 1 and end at column line 2  */
+  grid-column: 1 / 2;
+  /* grid-row - this property specifies that the first '.grid-item' should be placed in the first row. */
+  grid-row: 1;
+}

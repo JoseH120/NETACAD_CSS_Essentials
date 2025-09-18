@@ -1,0 +1,134 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background: lightblue;
+  padding: 10px;
+}
+
+.footer-item {
+  padding: 5px;
+  margin: 5px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: lightblue;
+  padding: 10px;
+}
+
+.nav-item {
+  margin: 5px;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid lightgray;
+}
+
+.product-container {
+  display: flex;
+  /* allow multiple lines of product cards */
+  flex-wrap: wrap;
+  /* space between product cards */
+  gap: 20px;
+}
+
+.product-card {
+  /* Allow cards to grow and fill the space */
+  flex: 1;
+  /* minimum width of a card */
+  min-width: 200px;
+  display: flex;
+  /* Stack card content vertically */
+  flex-direction: column;
+  /* Distribut space evenly between content */
+  justify-content: space-between;
+  padding: 20px;
+  border: 1px solid lightgray;
+  background-color: white;
+}
+
+.product-card img {
+  /* Make the image responsive */
+  max-width: 100%;
+  height: auto;
+}
+
+.product-card h2 {
+  margin: 10px 0;
+}
+
+.product-card p {
+  flex-grow: 1;
+}
+
+.product-card button {
+  align-self: center;
+  padding: 10px 20px;
+}
+
+.testimonial-container {
+  display: flex;
+  /* Allow testimonials to wrap onto multiple lines */
+  flex-wrap: wrap;
+  /* space between testimonials */
+  gap: 20px;
+  background: #f8f8f8;
+  padding: 20px;
+}
+
+.testimonial {
+  /* allow testimonials to grow and fill the space */
+  flex: 1;
+  /* minimun widht of a testimonial */
+  min-width: 250px;
+  display: flex;
+  /* stack content vertically */
+  flex-direction: column;
+  /* Align items in the center */
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #eee;
+  background-color: white;
+}
+
+.testimonial img {
+  /* make the image circular */
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.testimonial p {
+  /* Allow the testimonial text to take up available space */
+  flex-grow: 1;
+  /* center-align the testimonial text */
+  text-align: center;
+}
+
+.testimonial .name {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.shape-container {
+  display: flex;
+  /* center the shape horizontally  */
+  justify-content: center;
+  /* center the shape vertically */
+  align-items: center;
+  /* Set height of the container */
+  height: 200px;
+}
+
+.shape {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  /* Create a diamond shape */
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}

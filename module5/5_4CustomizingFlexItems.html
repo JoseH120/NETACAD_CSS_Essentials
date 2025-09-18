@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customizing Flex Items</title>
+    <link rel="stylesheet" href="../styles/module5/FLexbox4.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Flex Items Properties</h1>
+      <details name="group">
+        <summary><strong>flex grow property</strong></summary>
+        <p>
+          Defines the ability of a flex item to grow if necessary. It's a way to
+          distribute available space or to absorb extra space within the flex
+          container.
+        </p>
+        <div class="flex-container-grow">
+          <div>Item1</div>
+          <div>Item2</div>
+          <div>Item3</div>
+        </div>
+      </details>
+
+      <details name="group">
+        <summary><strong>flex shrink property</strong></summary>
+        <p>
+          Defines the ability of a flex item to shrink if necessary. It's a way
+          to manage space between the total size of the flex items exceeds the
+          size of the flex container
+        </p>
+        <div class="flex-container-shrink">
+          <div>Item 1</div>
+          <div>Item 2</div>
+          <div>Item 3</div>
+        </div>
+      </details>
+
+      <details name="group">
+        <summary><strong>flex basis property</strong></summary>
+        <p>
+          Sets the initial size of the a flex item before the ramaining space is
+          distributed according to flex-grow and flex-shrink. it defines how big
+          the items should be when the container is first rendered
+        </p>
+        <div class="flex-container-basis">
+          <div>Item 1</div>
+          <div>Item 2</div>
+          <div>Item 3</div>
+        </div>
+      </details>
+
+      <details name="group">
+        <summary><strong>flex shorthand property</strong></summary>
+        <p>
+          The <strong><em>flex</em></strong> property is a shorthand for setting
+          <strong><em>flex-grow</em></strong
+          >, <strong><em>flex-shrink</em></strong
+          >, <strong><em>flex-basis</em></strong> in one declaration.
+        </p>
+        <div class="flex-container-shorthand">
+          <div>Item 1</div>
+          <div>Item 2</div>
+          <div>Item 3</div>
+        </div>
+      </details>
+
+      <details name="group">
+        <summary><strong>align self property</strong></summary>
+        <p>
+          allows you to override the
+          <strong><em>align-items</em></strong> property for individual flex
+          items. It's useful when you want to align a specific item differently
+          from others in the same flex container.
+        </p>
+        <p>
+          You can aply <strong><em>align-self</em></strong> to any flex item to
+          adjust its alignment along the cross axis, independent of the other
+          items.
+        </p>
+        <div class="flex-container-align-item">
+          <div class="item">Item 1</div>
+          <div class="item special">Special Item</div>
+          <div class="item">Item 3</div>
+        </div>
+      </details>
+      <details name="group">
+        <summary><strong>align self values</strong></summary>
+        <ul>
+          <li>
+            <strong><em>auto</em></strong> - inherits the align-items property
+            of the container
+          </li>
+          <li>
+            <strong><em>flex-start</em></strong> - aligns the item at the start
+            of the cross axis
+          </li>
+          <li>
+            <strong><em>flex-end</em></strong> - aligns the item at the end of
+            the cross axis
+          </li>
+          <li>
+            <strong><em>center</em></strong> - aligns the item at the center of
+            the cross axis
+          </li>
+          <li>
+            <strong><em>stretch</em></strong> - stretches the item to fill the
+            container (default behavior)
+          </li>
+        </ul>
+      </details>
+    </main>
+  </body>
+</html>

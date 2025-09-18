@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Properties</title>
+    <link rel="stylesheet" href="../styles/module5/Grid2.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Grid Properties</h1>
+      <section>
+        <h2>Container properties</h2>
+
+        <details name="group">
+          <summary>
+            <strong>display: grid and inline-grid properties</strong>
+          </summary>
+          <p>Are used to define a container as a grid container.</p>
+          <ul>
+            <li>
+              <em>display:grid</em> - this property makes the container a
+              block-level grid. This means the grid container behaves like a
+              block element, taking up the full width available and starting on
+              a new line in the document flow
+            </li>
+            <li>
+              <em>display: inline-grid</em> - this property makes the container
+              an inline-level grid. This means the grid container behaves like
+              an inline element, taking up only as much width as it needs and
+              not forcing a new line in the document flow.
+            </li>
+            <div class="grid-container-block">
+              <div class="grid-item">Block 1</div>
+              <div class="grid-item">Block 2</div>
+            </div>
+            <div class="grid-container-inline">
+              <div class="grid-item">Inline 1</div>
+              <div class="grid-item">Inline 2</div>
+            </div>
+          </ul>
+        </details>
+
+        <details name="group">
+          <summary>
+            <strong>grid-template-columns and grid-template-rows</strong>
+          </summary>
+          <p>
+            Let you
+            <strong
+              >define the structure of your grid with specific sizes for columns
+              and rows</strong
+            >
+          </p>
+          <p>
+            they accept values like lengths, percentages, or the keyword
+            <strong><em>auto</em></strong
+            >. Additionally, you can use the <strong><em>fr</em></strong> unit
+            for a fraction of the available space, allowing responsive layouts.
+          </p>
+          <div class="img">
+            <img
+              src="../res/img11-grid-properties.png"
+              alt="grid properties image"
+            />
+          </div>
+        </details>
+
+        <details name="group">
+          <summary><strong>container item alignment property</strong></summary>
+          <p>
+            You can use the <strong><em>justify-items</em></strong
+            >, <strong><em>align-items</em></strong
+            >, <strong><em>place-items</em></strong> properties to control the
+            alignment of grid items within their cells on both axes. In other
+            words, you can use them to
+            <strong
+              >align grid items along the row (inline) or column (block) axis at
+              the individual cell level.</strong
+            >
+            Specifically:
+          </p>
+          <ul>
+            <li>
+              <strong><em>justify-items</em></strong> aligns grid items along
+              the inline (row) axis.
+            </li>
+            <li>
+              <strong><em>align-items</em></strong> aligns grid items along the
+              block (column) axis
+            </li>
+            <li>
+              <strong><em>place-items</em></strong> is a shorthand for setting
+              both <strong><em>align-items</em></strong> and
+              <strong><em>justify-items</em></strong> simultaneously
+            </li>
+          </ul>
+          <div class="grid-container-2">
+            <div class="grid-item2">Item 1</div>
+            <div class="grid-item2">Item 2</div>
+            <div class="grid-item2">Item 3</div>
+            <div class="grid-item2">Item 4</div>
+            <div class="grid-item2">Item 5</div>
+            <div class="grid-item2">Item 6</div>
+            <div class="grid-item2">Item 7</div>
+            <div class="grid-item2">Item 8</div>
+            <div class="grid-item2">Item 9</div>
+          </div>
+          <p>
+            <strong><em>justify-items: center</em></strong> centers the grid
+            items within their cells along the inline (row) axis, and
+            <strong><em>align-items: center</em></strong> centers them along the
+            block column axis.
+          </p>
+          <div class="flex-container-imgs">
+            <div class="flex-item">
+              <img
+                src="../res/img12-justify_items.png"
+                alt="grid container property"
+              />
+            </div>
+            <div class="flex-item">
+              <img
+                src="../res/img13-align-items.png"
+                alt="grid container property"
+              />
+            </div>
+          </div>
+        </details>
+
+        <details name="group">
+          <summary>
+            <strong>container content alignment properties</strong>
+          </summary>
+          <p>
+            You can use the <strong><em>justify-content</em></strong
+            >, <strong><em>align-content</em></strong
+            >, <strong><em>place-content</em></strong> properties to control the
+            alignment of the entire grid within the grid container. In other
+            words, you can use them to
+            <strong
+              >align the grid along the row (inline) or column(block) axis
+              within the grid contianer</strong
+            >. Specifically
+          </p>
+          <ul>
+            <li>
+              <strong><em>justify-content</em></strong> aligns the grid along
+              the inline (row) axis within the grid container
+            </li>
+            <li>
+              <strong><em>align-content</em></strong> aligns the grid along the
+              block (column) axis within the grid container
+            </li>
+            <li>
+              <strong><em>place-content</em></strong> is a shorthand for setting
+              both <strong><em>aling-content</em></strong> and
+              <strong><em>justify-content</em></strong> simultaneously
+            </li>
+          </ul>
+          <div class="grid-container-3">
+            <div class="grid-item2">Item 1</div>
+            <div class="grid-item2">Item 2</div>
+            <div class="grid-item2">Item 3</div>
+          </div>
+          <p>
+            Both sets of properties (<strong><em>justify-items</em></strong
+            >/ <strong><em>align-items</em></strong
+            >/ <strong><em>place-items</em></strong> and
+            <strong><em>justify-content</em></strong
+            >/ <strong><em>align-content</em></strong
+            >/ <strong><em>place-content</em></strong
+            >) are crucial for fine-tuning the alignment and positioning of grid
+            items and the grid itself within the container, enabling you to
+            create precise and balanced layouts
+          </p>
+          <div class="flex-container-imgs">
+            <div class="flex-item">
+              <img
+                src="../res/img14-justify-content.png"
+                alt="grid container property"
+              />
+            </div>
+            <div class="flex-item">
+              <img
+                src="../res/img15-align-content.png"
+                alt="grid container property"
+              />
+            </div>
+          </div>
+        </details>
+
+        <details name="group">
+          <summary><strong>other container properties</strong></summary>
+          <p>
+            Let's briefly go through some other container properties that may be
+            worth mentioning.
+          </p>
+          <ul>
+            <li>
+              <strong><em>grid-template-areas</em></strong> - defines a grid
+              template by referencing the names of the areas
+            </li>
+            <li>
+              <strong><em>grid-template</em></strong> - a shorthand property for
+              setting <strong><em>grid-template-rows</em></strong
+              >, <strong><em>grid-template-columns</em></strong
+              >, and <strong><em>grid-template-areas</em></strong>
+            </li>
+            <li>
+              <strong><em>grid-column-gap</em></strong> /
+              <strong><em>grid-row-gap</em></strong> (or simply
+              <strong><em>gap</em></strong
+              >, <strong><em>row-gap</em></strong
+              >, <strong><em>grid-column-gap</em></strong
+              >) - specify the size of the gap between rows and columns.
+            </li>
+            <li>
+              <strong><em>grid-auto-columns</em></strong> /
+              <strong><em>grid-auto-rows</em></strong> - specify the size of any
+              auto-generated grid tracks (row or columns).
+            </li>
+            <li>
+              <strong><em>grid-auto-flow</em></strong> - controls how the
+              auto-placement algorithm works, specifying exactly how auto-placed
+              items get flowed into the grid.
+            </li>
+          </ul>
+          <div class="flex-container-imgs">
+            <div class="flex-item">
+              <img
+                src="../res/img16-grid-template-area.png"
+                alt="grid container property"
+              />
+            </div>
+            <div class="flex-item">
+              <img
+                src="../res/img17-grid-column-gap.png"
+                alt="grid container property"
+              />
+            </div>
+          </div>
+        </details>
+      </section>
+      <section>
+        <h2>Item properties</h2>
+        <details name="group2">
+          <summary><strong>grid line placement properties</strong></summary>
+          <p>
+            these properties specify the line numbers where a grid itme's
+            placement should start and end along both the row and column axes.
+          </p>
+          <ul>
+            <li>
+              <strong><em>grid-column-start</em></strong
+              >/<strong><em>grid-column-end</em></strong> - determine the
+              starting and ending position of a grid item along the column axis.
+            </li>
+            <li>
+              <strong><em>grid-row-start</em></strong
+              >/<strong><em>grid-row-end</em></strong> - determine the starting
+              and ending position of a grid item laong the row axis.
+            </li>
+          </ul>
+          <div class="grid-container1">
+            <div class="grid-items item1">Item 1</div>
+            <div class="grid-items item2">Item 2</div>
+          </div>
+        </details>
+
+        <details name="group2">
+          <summary>
+            <strong>individual item alignment properties</strong>
+          </summary>
+          <p>
+            these properties allow you to
+            <strong
+              >specify the alignment of an item along the inline (row) axis and
+              the block(column) axis within its cel</strong
+            >. Specifically:
+          </p>
+          <ul>
+            <li>
+              <strong><em>justify-self</em></strong> - aligns a grid item inside
+              its cell along the inline (row) axis
+            </li>
+            <li>
+              <strong><em>align-self</em></strong> - alings a grid item inside
+              its cell along the block (column) axis.
+            </li>
+            <li>
+              <strong><em>place-self</em></strong> - is a shorthand property for
+              setting both align-self and justify-self
+            </li>
+          </ul>
+          <div class="grid-container2">
+            <div class="grid-items item1">Item 1</div>
+            <div class="grid-items item2">Item 2</div>
+          </div>
+          <div class="flex-container-imgs">
+            <div class="flex-item">
+              <img
+                src="../res/img18-justify-self.png"
+                alt="grid container property"
+              />
+            </div>
+            <div class="flex-item">
+              <img
+                src="../res/img19-align-self.png"
+                alt="grid container property"
+              />
+            </div>
+          </div>
+        </details>
+      </section>
+    </main>
+  </body>
+</html>
